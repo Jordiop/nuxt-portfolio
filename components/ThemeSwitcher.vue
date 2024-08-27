@@ -1,0 +1,34 @@
+<template>
+  <a href="#" @click.prevent="toggleTheme" aria-label="Theme Switcher">
+    <i
+      v-if="theme === 'light'"
+      data-feather="moon"
+      class="w-5  text-liText-ternary-dark hover:text-gray-400 dark:text-liText-ternary-light dark:hover:text-liBorder-primary-light"
+    ></i>
+    <i
+      v-else
+      data-feather="sun"
+      class="w-5 text-gray-200 hover:text-gray-50"
+    ></i>
+  </a>
+</template>
+
+<script>
+  export default {
+    name: "ThemeSwitcher",
+    props: {
+      theme: {
+        type: String,
+        required: true,
+      },
+    },
+    methods: {
+      toggleTheme() {
+        const newTheme = this.theme === "light" ? "dark" : "light";
+        localStorage.setItem("theme", newTheme);
+        this.$emit("themeChanged", newTheme);
+        this.$router.go();
+      },
+    },
+  };
+</script>
