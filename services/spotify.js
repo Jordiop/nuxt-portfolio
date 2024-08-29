@@ -1,6 +1,6 @@
-const clientID = 'f94320e1a2e043c18cf80fc36733cfd2'
-const clientSecret = 'a4982d11ae714068999321afee3f1d1f'
-const refreshToken = 'AQC3TAO2ZuTISf9jWb1-sVWtWylwQt1C5mYicpXYoOHuMux4e-ShFPZUNgiL4RbmKeQj6pTD0lMVWZiJS2I97oW2Ff-fCO5hhP_rbql27a7Yk66PP6WL2IjvpNDrTFn5334'
+const clientID = process.env.SPOTIFY_CLIENT_ID
+const clientSecret = process.env.SPOTIFY_CLIENT_SECRET
+const refreshToken = process.env.SPOTIFY_REFRESH_TOKEN
 
 const TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token'
 

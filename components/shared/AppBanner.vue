@@ -1,32 +1,32 @@
 <template>
-  <div class="grid w-full md:h-full grid-cols-2 md:grid-cols-6 md:grid-rows-3 gap-3 p-10">
+  <div class="grid w-full grid-cols-2 gap-3 p-10 md:h-full md:grid-cols-6 md:grid-rows-3">
     <!--IMATGE-->
-    <div class="col-span-2 md:col-span-3 aspect-square row-span-1 md:row-span-2 rounded-3xl order-1 md:order-1">
+    <div class="order-1 col-span-2 row-span-1 overflow-hidden md:col-span-3 aspect-square md:aspect-auto md:row-span-2 rounded-3xl md:order-1">
       <!-- sample image -->
-      <img src="https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg" class="w-full h-full " />
+      <img src="https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg" class="w-full h-full overflow-hidden" />
     </div>
     <!--EMPTY-->
     <div
-      class="flex items-center justify-center col-span-1 row-span-1 p-2 text-white bg-gray-200 shadow-xl rounded-3xl hover:transition-transform hover:scale-105 peer md:order-2 order-8">
+      class="flex items-center justify-center order-8 col-span-1 row-span-1 p-2 text-white bg-gray-200 shadow-xl rounded-3xl hover:transition-transform hover:scale-105 peer md:order-2">
       <div class="">
 
       </div>
     </div>
     <!--WEATHER-->
     <div
-      class="flex items-center justify-center col-span-2 md:col-span-1 row-span-1 p-2 text-white bg-gray-200 shadow-xl rounded-3xl hover:transition-transform hover:scale-105 peer md:order-3 order-9">
+      class="flex items-center justify-center order-9 col-span-2 row-span-1 p-2 text-white bg-gray-200 shadow-xl md:col-span-1 rounded-3xl hover:transition-transform hover:scale-105 peer md:order-3">
       <div class="">
         <WeatherWidget />
       </div>
     </div>
     <!--EMPTY 2-->
     <div
-    class="flex flex-col items-center justify-center col-span-1 row-span-1 p-2 text-white bg-gray-200 shadow-xl rounded-3xl hover:transition-transform hover:scale-105 peer md:order-4 order-10">
+    class="flex flex-col items-center justify-center order-10 col-span-1 row-span-1 p-2 text-white bg-gray-200 shadow-xl rounded-3xl hover:transition-transform hover:scale-105 peer md:order-4">
     </div>
     <!--EDAD-->
     <div
-      class="relative flex items-center justify-center col-span-1 row-span-1 p-4 text-gray-600 bg-gray-200 shadow-xl rounded-3xl order-2 md:order-5">
-      <div class="">
+      class="relative flex items-center justify-center order-2 col-span-1 row-span-1 p-2 text-gray-600 bg-gray-200 shadow-xl rounded-3xl md:order-5">
+      <div class="flex items-center justify-center w-full h-full bg-white rounded-3xl">
         <div class="flex flex-col items-center justify-center">
           <p class="text-xs uppercase md:text-lg font">age</p>
           <p class="text-4xl font-bold md:text-8xl">23</p>
@@ -36,7 +36,7 @@
     </div>
     <!--TECH STACK-->
     <div
-      class="order-6 md:relative flex items-center justify-center col-span-2 md:col-span-2 row-span-1 p-2 text-gray-600 duration-300 transform bg-gray-200 shadow-xl hover:transition-transform hover:scale-105 peer rounded-3xl">
+      class="flex items-center justify-center order-6 col-span-2 row-span-1 p-2 text-gray-600 duration-300 transform bg-gray-200 shadow-xl md:relative md:col-span-2 hover:transition-transform hover:scale-105 peer rounded-3xl">
       <div class="w-full h-full shadow-md rounded-3xl card-hover bg-gray-50 shadow-indigo-900/5"
         style="--x-rotation: 0.8476068806854309deg; --y-rotation: -6.7344108200621555deg;">
         <div class="w-full h-full p-6 rounded-md">
@@ -129,7 +129,7 @@
     </div>
     <!--SKILLS-->
     <div
-      class="order-5 h-full md:order-7 flex flex-col items-center justify-between col-span-2 row-span-1 p-2 text-white bg-gray-200 shadow-xl rounded-3xl">
+      class="flex flex-col items-center justify-between order-5 h-full col-span-2 row-span-1 p-2 text-white bg-gray-200 shadow-xl md:order-7 rounded-3xl">
       <div class="flex flex-col justify-between w-full h-full p-2 bg-gray-50 rounded-3xl">
         <p class="flex flex-row items-center justify-start gap-2 p-1 mt-3 ml-4 leading-tight text-gray-500">
           <img src="https://img.icons8.com/?size=100&id=58861&format=png&color=000000" class="w-5 h-5" />
@@ -158,34 +158,44 @@
     </div>
     <!--GITHUB-->
     <div
-      class="md:order-8 order-7 flex items-center justify-center col-span-1  row-span-1 p-2  text-white bg-gray-200 shadow-xl rounded-3xl hover:transition-transform hover:scale-105 peer">
+      class="flex items-center justify-center order-7 col-span-1 row-span-1 p-2 text-white bg-gray-200 shadow-xl md:order-8 rounded-3xl hover:transition-transform hover:scale-105 peer">
       <Github />
     </div>
     <!--IDIOMES-->
     <div
-    class="order-3 md:order-9 flex flex-col items-center justify-center col-span-1 row-span-1 p-2 text-white bg-gray-200 shadow-xl rounded-3xl hover:transition-transform hover:scale-105 peer">
-      <span class="flex flex-row items-center justify-start w-10 mx-1 ml-12">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Catalonia.svg/800px-Flag_of_Catalonia.svg.png"
-          class="w-4 h-4 mr-2">
-        <span class="text-xl font-bold">CAT</span>
-      </span>
-      <span class="flex flex-row items-center justify-start w-10 mx-1 ml-12">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandera_de_Espa%C3%B1a_%28sin_escudo%29.svg/800px-Bandera_de_Espa%C3%B1a_%28sin_escudo%29.svg.png"
-          class="w-4 h-4 mr-2">
-        <span class="text-xl font-bold">ESP</span>
-      </span>
-      <span class="flex flex-row items-center justify-start w-10 mx-1 ml-12">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/800px-Flag_of_the_United_Kingdom_%281-2%29.svg.png"
-          class="w-4 h-4 mr-2">
-        <span class="text-xl font-bold">ENG</span>
-      </span>
+    class="flex items-center justify-between order-3 col-span-1 row-span-1 p-2 text-white bg-gray-200 shadow-xl md:order-9 rounded-3xl hover:transition-transform hover:scale-105 peer">
+    <div class="flex flex-col w-full h-full p-1 bg-white rounded-3xl">
+        <div>
+          <p class="flex flex-row items-center justify-start gap-2 p-1 mt-3 ml-4 leading-tight text-gray-500">
+            <img src="https://img.icons8.com/ios/100/language.png" class="w-5 h-5" />
+            <span>Languages</span>
+          </p>
+        </div>
+        <div class="flex flex-col items-center justify-start w-full h-full md:justify-center">
+          <span class="flex flex-row items-center justify-start w-full h-full mx-1 ml-20 md:ml-36">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Catalonia.svg/800px-Flag_of_Catalonia.svg.png"
+              class="w-4 h-4 mr-2 md:w-8 md:h-8">
+            <span class="text-xl font-bold text-gray-600">CAT</span>
+          </span>
+          <span class="flex flex-row items-center justify-start w-full h-full mx-1 ml-20 md:ml-36">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandera_de_Espa%C3%B1a_%28sin_escudo%29.svg/800px-Bandera_de_Espa%C3%B1a_%28sin_escudo%29.svg.png"
+              class="w-4 h-4 mr-2 md:w-8 md:h-8">
+            <span class="text-xl font-bold text-gray-600">ESP</span>
+          </span>
+          <span class="flex flex-row items-center justify-start w-full h-full mx-1 ml-20 md:ml-36">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/800px-Flag_of_the_United_Kingdom_%281-2%29.svg.png"
+              class="w-4 h-4 mr-2 md:w-8 md:h-8">
+            <span class="text-xl font-bold text-gray-600">ENG</span>
+          </span>
+        </div>
+      </div>
     </div>
     <!---->
     <SpotifyCard
-      class="md:order-10 flex items-center justify-center w-full col-span-2 row-span-1 p-2 text-white bg-gray-200 shadow-xl rounded-3xl order-9" />
+      class="flex items-center justify-center order-9 w-full col-span-2 row-span-1 p-2 text-white bg-gray-200 shadow-xl md:order-10 rounded-3xl" />
   </div>
 </template>
 
