@@ -4,22 +4,14 @@
     <!-- Projects grid title -->
     <div class="text-center">
       <p
-        class="
-          font-general-semibold
-          text-4xl
-          md:text-5xl
-          font-semibold
-          mb-12
-          text-primary-dark
-          dark:text-primary-light
-        "
+        class="mb-12 text-4xl font-semibold  font-general-semibold md:text-5xl text-primary-dark dark:text-primary-light"
       >
         Projects
       </p>
     </div>
 
     <!-- Projects grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
+    <div class="grid grid-cols-1 mt-6 sm:grid-cols-2 lg:grid-cols-3 sm:gap-10">
       <ProjectCell
         v-for="project in projectSummaries"
         :key="project.id"
@@ -31,7 +23,6 @@
 
 
 <script>
-  import feather from "feather-icons";
   import ProjectCell from "./ProjectCell.vue";
   import projectSummaries from "@/data/projectSummaries";
 
@@ -42,9 +33,6 @@
       return {
         projectSummaries
       };
-    },
-    mounted() {
-      feather.replace();
     },
   };
 </script>

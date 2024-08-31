@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import slidebar from '../utils/slidebar.vue'
+import slidebar from '@/components/utils/slidebar.vue'
 
 export default {
   components: {

@@ -4,26 +4,26 @@ const projectSummaries = [
   {
     id: 0,
     title: "GAI",
-    category: "Full-stack",
+    category: "Full-stack. Warehouse management",
     date: "2023",
-    displayImg: "@/assets/images/gai.jpg",
+    displayImg: "https://i.imgur.com/hlTeltV.jpg",
     galleryImg: [
-      "@/assets/images/gai_login.png",
-      "@/assets/images/gai_dashboard.png",
-      "@/assets/images/gai_product.png"
+      "https://i.imgur.com/RXIot7q.png",
+      "https://i.imgur.com/xcrswcV.png",
+      "https://i.imgur.com/gn4SvDx.png"
     ],
   },
   {
     id: 1,
     title: "Osanotes",
-    category: "Utilities",
+    category: "Utilities. Company management",
     date: "Developing",
-    displayImg: "@/assets/images/osanoma.jpg",
+    displayImg: "https://i.imgur.com/73lmi9v.jpg",
   },
   {
     id: 2,
     title: "Hipotecas",
-    category: "Utilities",
+    category: "Utilities. Loan calculator",
     date: "2023",
     displayImg: "https://imgs.search.brave.com/2hyuADAY47pdigISKUmbutO3jHaeDkDnQOOqIfSe-1w/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/ZXZvYmFuY28uY29t/L2ltYWdlcy9hbC1k/aWEtY29uLWV2by9w/cmVzdGFtb3MtaGlw/b3RlY2FyaW9zLmpw/Zw"
   }

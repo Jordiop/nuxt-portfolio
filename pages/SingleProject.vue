@@ -13,11 +13,11 @@
 
 <script>
   import feather from "feather-icons";
-  import ProjectHeader from "../components/projects/ProjectHeader.vue";
-  import ProjectGallery from "../components/projects/ProjectGallery.vue";
-  import ProjectInfo from "../components/projects/ProjectInfo.vue";
-  import projectSummaries from "../data/projectSummaries";
-  import projectDetails from "../data/projectDetails";
+  import ProjectHeader from "@/components/projects/ProjectHeader.vue";
+  import ProjectGallery from "@/components/projects/ProjectGallery.vue";
+  import ProjectInfo from "@/components/projects/ProjectInfo.vue";
+  import projectSummaries from "@/data/projectSummaries";
+  import projectDetails from "@/data/projectDetails";
   export default {
     name: "Projects",
     components: {

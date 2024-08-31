@@ -24,13 +24,6 @@
         <i data-feather="user" class="w-5 h-5 mr-2" />
         About
       </span></router-link>
-    <router-link to="/contact"
-      class="block pt-3 mb-2 text-lg font-medium text-left border-t-2 font-general-medium text-primary-dark dark:text-primary-light hover:text-teal-600 dark:hover:text-cyan-100 sm:mx-4 sm:py-2 sm:pt-2 sm:border-t-0 border-secondary-light dark:border-secondary-dark"
-      :class="selectedRoute === '/contact' ? 'border-b-2 border-secondary-light dark:border-secondary-dark' : ''"
-      aria-label="Contact"><span class="flex flex-row items-center">
-        <i data-feather="mail" class="w-5 h-5 mr-2" />
-        Contact
-      </span></router-link>
 
     <div class="pt-3 border-t-2 sm:pt-0 sm:border-t-0 border-secondary-light dark:border-secondary-dark"></div>
   </div>

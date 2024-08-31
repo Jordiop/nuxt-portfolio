@@ -7,7 +7,7 @@ const experiences = [
     subtitle: "Computer Science",
     startDate: "October 2023 - ongoing",
     detail: ["Bachelor's degree in Computer Science, 240 ECTS."],
-    imgSrc: require("@/assets/images/cmu-logo.png"),
+    imgSrc: "https://i.imgur.com/VbUxUBY.png",
     website: "https://www.uoc.edu"
   },
   {
@@ -15,7 +15,7 @@ const experiences = [
     title: 'Omniaccess',
     subtitle: 'Jr Full Stack Developer',
     startDate: "March 2023 - ongoing",
-    imgSrc: require("@/assets/images/omnilogo.jpeg"),
+    imgSrc: "https://i.imgur.com/nlPZVbg.jpg",
     detail: ["Developing and maintaining web applications for the company's internal and external use."],
     website: "https://www.omniaccess.com"
   },
@@ -25,7 +25,7 @@ const experiences = [
     subtitle: "CFGS Desenvolupament Aplicacions Web",
     startDate: "September 2021 - June 2023",
     detail: ["Higher Degree in Web Application Development, 2000 hours of training. 400 hours of internship in a company."],
-    imgSrc:require("@/assets/images/nfls-logo.jpg"),
+    imgSrc:"https://i.imgur.com/maqQKYd.jpg",
     website: "https://www.cifpfbmoll.eu/",
   },
 ];

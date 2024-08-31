@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-1 md:grid-cols-7" :class="appTheme" >
     <NuxtRouteAnnouncer />
-    <AppHeader class="sticky md:left-0 z-10 md:col-span-1 p-3 md:h-96"/>
+    <AppHeader class="sticky z-10 p-3 md:left-0 md:col-span-1 md:h-96"/>
     <NuxtPage class="min-h-screen col-span-6 overflow-y-scroll"/> 
   </div>
 </template>
@@ -21,3 +21,14 @@ export default {
     },
   };  
 </script>
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+</style>
