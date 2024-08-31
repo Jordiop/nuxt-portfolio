@@ -24,4 +24,13 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  runtimeConfig: {
+    // Private keys are only available on the server side
+    public: {
+      spotifyClientID: process.env.SPOTIFY_CLIENT_ID,
+      spotifyClientSecret: process.env.SPOTIFY_CLIENT_SECRET,
+      spotifyRefreshToken: process.env.SPOTIFY_REFRESH_TOKEN,
+      weatherApiKey: process.env.API_KEY_WEATHER_API,
+    }
+  },
 })

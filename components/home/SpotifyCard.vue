@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { getNowPlaying } from '@/services/spotify'
+import spotifyService from '@/services/spotify'
 export default {
     data() {
         return { currentTrackStr: 'Nothing playing right now.', image: '', nowOrLast: '' }
@@ -21,7 +21,7 @@ export default {
     methods: {
         async currentTrack() {
             try {
-                const response = await getNowPlaying()
+                const response = await spotifyService.getNowPlaying()
                 if (response.status === 200) {
                     const { item, is_playing: np } = await response.json()
                     np ? this.nowOrLast = 'Now playing: ' : this.nowOrLast = 'Last played:'

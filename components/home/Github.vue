@@ -6,7 +6,7 @@
             </svg>
             <span class="text-gray-600">Github</span>
         </div>
-        <div class="">
+        <div class="mx-auto">
             <img src="@/assets/images/stack.gif" alt="Github" class="w-52 h-52">
         </div>
     </div>

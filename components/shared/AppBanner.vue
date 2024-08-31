@@ -1,23 +1,25 @@
 <template>
   <div class="grid w-full grid-cols-2 gap-3 p-10 md:h-full md:grid-cols-6 md:grid-rows-3">
     <!--IMATGE-->
-    <div class="order-1 col-span-2 row-span-1 overflow-hidden md:col-span-3 aspect-square md:aspect-auto md:row-span-2 rounded-3xl md:order-1">
+    <div class="order-1 col-span-2 row-span-1 p-2 overflow-hidden bg-gray-200 md:col-span-3 aspect-square md:aspect-auto md:row-span-2 rounded-3xl md:order-1">
       <!-- sample image -->
-      <img src="https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg" class="w-full h-full overflow-hidden" />
+      <Me />
     </div>
     <!--EMPTY-->
     <div
       class="flex items-center justify-center order-8 col-span-1 row-span-1 p-2 text-white bg-gray-200 shadow-xl rounded-3xl hover:transition-transform hover:scale-105 peer md:order-2">
-      <div class="">
-
+      <div class="flex items-center justify-center w-full h-full bg-white rounded-3xl">
+        <div class="flex flex-col items-center justify-center text-gray-600">
+          <p class="text-xs uppercase md:text-lg font">Experience</p>
+          <p class="text-4xl font-bold md:text-8xl">2</p>
+          <p class="text-xs font-semibold text-center uppercase md:text-xl">years</p>
+        </div>
       </div>
     </div>
     <!--WEATHER-->
     <div
       class="flex items-center justify-center order-9 col-span-2 row-span-1 p-2 text-white bg-gray-200 shadow-xl md:col-span-1 rounded-3xl hover:transition-transform hover:scale-105 peer md:order-3">
-      <div class="">
         <WeatherWidget />
-      </div>
     </div>
     <!--EMPTY 2-->
     <div
@@ -73,6 +75,9 @@
                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                   </svg>Keychron K3 V2</p>
               </div>
+              <div class="flex flex-col items-start h-full gap-2 pl-1 text-xs font-normal text-gray-500 md:pl-3">
+                
+              </div>
             </div>
             <div class="flex flex-col gap-3 text-sm">Software<div
                 class="flex flex-col items-start gap-3 sm:flex-row md:gap-2">
@@ -93,33 +98,19 @@
                         d="M10.8634 13.9195C10.6568 14.0195 10.4233 14.0246 10.2185 13.9444C10.1162 13.9044 10.021 13.843 9.93997 13.7614L4.81616 9.06268L2.58433 10.7656C2.37657 10.9241 2.08597 10.9111 1.89301 10.7347L1.17719 10.0802C0.941168 9.86437 0.940898 9.49112 1.17661 9.27496L3.11213 7.5L1.17661 5.72504C0.940898 5.50888 0.941168 5.13563 1.17719 4.91982L1.89301 4.2653C2.08597 4.08887 2.37657 4.07588 2.58433 4.2344L4.81616 5.93732L9.93997 1.23855C9.97037 1.20797 10.0028 1.18023 10.0368 1.15538C10.2748 0.981429 10.5922 0.949298 10.8634 1.08048L13.5399 2.37507C13.8212 2.5111 14 2.79721 14 3.11109V8H10.752V4.53356L6.86419 7.5L10.752 10.4664V8H14V11.8889C14 12.2028 13.8211 12.4889 13.5399 12.625L10.8634 13.9195Z">
                       </path>
                     </svg>VSCode</p>
-                  <p class="flex items-center gap-2 leading-tight"><svg stroke="currentColor" fill="currentColor"
-                      stroke-width="0" role="img" viewBox="0 0 24 24" class="w-4 h-4 text-gray-600" height="1em"
-                      width="1em" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M13.966 22.624l-1.69-4.281H8.122l3.892-9.144 5.662 13.425zM8.884 1.376H0v21.248zm15.116 0h-8.884L24 22.624Z">
-                      </path>
-                    </svg>Adobe Suite</p>
-                </div>
-                <div class="flex flex-col items-start h-full gap-2 pl-1 text-xs font-normal text-gray-500 md:pl-3">
-                  <p class="flex items-center gap-2 leading-tight"><svg class="w-4 h-4 text-gray-600"
-                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M11.4501 2.15012C12.2833 2.15012 13.0451 2.6209 13.4177 3.3662L17.0526 10.6359C17.8496 9.68859 18.4078 8.53381 18.6339 7.26428C18.8468 6.06811 19.9892 5.27108 21.1853 5.48406C22.3815 5.69704 23.1785 6.83938 22.9656 8.03555C22.4889 10.7128 21.0971 13.073 19.1249 14.7807L20.5675 17.6657C21.1108 18.7524 20.6703 20.0738 19.5836 20.6172C18.4969 21.1605 17.1755 20.7201 16.6321 19.6333L15.3068 16.9827C14.1195 17.3916 12.8451 17.6136 11.5186 17.6136C10.1485 17.6136 8.83407 17.3765 7.61391 16.9415L6.26798 19.6333C5.72462 20.7201 4.40319 21.1605 3.31648 20.6172C2.22976 20.0738 1.78929 18.7524 2.33264 17.6657L3.81704 14.6969C2.78424 13.7831 1.91555 12.6888 1.26053 11.4643C0.687446 10.3929 1.09136 9.05988 2.16269 8.48679C3.23403 7.91371 4.56709 8.31763 5.14017 9.38896C5.35736 9.79497 5.61195 10.1776 5.89929 10.5324L9.48238 3.3662C9.85503 2.6209 10.6168 2.15012 11.4501 2.15012ZM9.60567 12.958C10.2151 13.1248 10.8566 13.2137 11.5186 13.2137C12.137 13.2137 12.7373 13.136 13.3104 12.9898L11.4501 9.26921L9.60567 12.958Z"
-                        fill="currentColor"></path>
-                    </svg>Brave Browser</p>
-                  <p class="flex items-center gap-2 leading-tight"><svg class="w-4 h-4 text-gray-600"
+                    <!--brave browser-->
+                    <p class="flex items-center gap-2 leading-tight"><svg class="w-4 h-4 text-gray-600"
                       xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                       <path
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"
+                        d="M12 2C12.5523 2 13 2.44772 13 3V21C13 21.5523 12.5523 22 12 22C11.4477 22 11 21.5523 11 21V3C11 2.44772 11.4477 2 12 2Z"
                         fill="currentColor"></path>
-                    </svg>Notion</p>
-                  <p class="flex items-center gap-2 leading-tight"><svg class="w-4 text-gray-600 fill-current"
-                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 48 48">
-                      <path fill="currentColor" fill-rule="evenodd"
-                        d="M12 30.99V36L-.01 23.99l2.516-2.499zM17.01 36H12l12.011 12.01 2.506-2.505zm28.487-9.497L48 24 24 0l-2.503 2.503L30.98 12h-5.732l-6.62-6.614-2.506 2.503 4.122 4.122h-2.869v18.625H36V27.77l4.122 4.122 2.503-2.506L36 22.747v-5.732zM13.253 10.747l-2.503 2.506 2.686 2.686 2.503-2.506zm21.314 21.314-2.495 2.503 2.686 2.686 2.506-2.503zM7.878 16.121l-2.503 2.504L12 25.253v-5.012zM27.756 36h-5.009l6.628 6.625 2.503-2.503z"
-                        clip-rule="evenodd"></path>
-                    </svg>Raycast</p>
+                      <path
+                        d="M6 6C6.55228 6 7 6.44772 7 7V17C7 17.5523 6.55228 18 6 18C5.44772 18 5 17.5523 5 17V7C5 6.44772 5.44772 6 6 6Z"
+                        fill="currentColor"></path>
+                      <path
+                        d="M17 6C17.5523 6 18 6.44772 18 7V17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17V7C16 6.44772 16.4477 6 17 6Z"
+                        fill="currentColor"></path>
+                    </svg>Sublime Text</p>
                 </div>
               </div>
             </div>
@@ -205,6 +196,7 @@ import AppScroll from "@/components/home/AppScroll.vue";
 import SpotifyCard from "@/components/home/SpotifyCard.vue";
 import Github from "@/components/home/Github.vue";
 import WeatherWidget from "@/components/weather/WeatherWidget.vue";
+import Me from "@/components/home/Me.vue";
 
 export default {
   name: "AppBanner",
@@ -217,7 +209,8 @@ export default {
     AppScroll,
     SpotifyCard,
     Github,
-    WeatherWidget
+    WeatherWidget,
+    Me
   },
   created() {
     this.theme = 'light'
@@ -225,6 +218,7 @@ export default {
   mounted() {
     feather.replace();
     this.theme = 'light'
+    console.log(process.env.SPOTIFY_CLIENT_ID)
   },
   updated() {
     feather.replace();

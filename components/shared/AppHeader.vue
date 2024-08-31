@@ -43,7 +43,7 @@
             <a href="/" class="flex items-center w-full">
               <span
                 class="text-2xl font-general-semibold text-primary-dark dark:text-primary-light sm:text-3xl"
-                >Jordiop</span
+                >J</span
               >
             </a>
           </div>
@@ -71,7 +71,7 @@
         <a href="/" class="items-center hidden w-full sm:flex">
           <span
             class="text-2xl font-general-semibold text-primary-dark dark:text-primary-light sm:text-3xl"
-            >Jordiop</span
+            ></span
           >
         </a>
       </div>
