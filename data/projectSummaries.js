@@ -26,6 +26,12 @@ const projectSummaries = [
     category: "Utilities. Loan calculator",
     date: "2023",
     displayImg: "https://imgs.search.brave.com/2hyuADAY47pdigISKUmbutO3jHaeDkDnQOOqIfSe-1w/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/ZXZvYmFuY28uY29t/L2ltYWdlcy9hbC1k/aWEtY29uLWV2by9w/cmVzdGFtb3MtaGlw/b3RlY2FyaW9zLmpw/Zw"
+  }, {
+    id: 3,
+    title: "Jordiop",
+    category: "Personal website",
+    date: "2024",
+    displayImg: "https://i.imgur.com/GUJD7jz.png",
   }
 
 ];

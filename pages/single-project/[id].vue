@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto mt-10 sm:mt-20">
+    <div class="container mx-auto">
       <!-- Project header -->
       <ProjectHeader :projectSummary="projectSummary" />
       <ProjectGallery
@@ -31,14 +31,17 @@
         };
       },
       mounted() {
-        console.log(this.$route.params.id);
+        const route = useRoute();
+        console.log(route.params.id);
       },
       computed: {
         projectSummary() {
-          return this.projectSummaries[this.$route.param.id];
+          const route = useRoute();
+          return this.projectSummaries[route.params.id];
         },
         projectDetail() {
-          return this.projectDetails[this.$route.param.id];
+          const route = useRoute();
+          return this.projectDetails[route.params.id];
         },
       },
       methods: {},

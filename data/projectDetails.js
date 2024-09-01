@@ -24,6 +24,13 @@ const projectDetails = [
     src: "https://github.com/Jordiop/Hipotecas",
     demo: "",
     description: 'One of my very first projects. Simple app using servlets to calculate in debt money with a fixed % interest rate. It has a simple login made from scratch.'
+  }, {
+    id: 3,
+    language: ["Javascript", "HTML", "CSS"],
+    tech: ["Nuxt.js", "Tailwind CSS"],
+    src: "",
+    demo: "http://jordiop.com/",
+    description: 'My personal website. I wanted to make something simple and clean to show my projects and some information about me.'
   }
   
 ];

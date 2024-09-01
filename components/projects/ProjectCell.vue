@@ -1,8 +1,8 @@
 <template>
   <NuxtLink
     :to="{
-      path: '/projects/single-project/',
-      query: { id: project.id },
+      name: 'single-project-id',
+      params: { id: project.id },
     }"
     class="mb-10 shadow-lg cursor-pointer h-96 rounded-xl hover:shadow-xl sm:mb-0 bg-secondary-light dark:bg-secondary-dark"
     aria-label="Single Project"
