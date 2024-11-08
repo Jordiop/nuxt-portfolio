@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 const titleTemplate = 'Portfolio'
-const titleChunk = titleTemplate ? `%s - ${titleTemplate}` : null
+const titleChunk = titleTemplate ? `%s | ${titleTemplate}` : '%s'
 
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',

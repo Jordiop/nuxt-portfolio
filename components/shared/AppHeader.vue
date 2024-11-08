@@ -12,7 +12,7 @@
           <!-- Theme switcher small screen -->
 
           <!-- Small screen hamburger menu -->
-          <div class="sm:hidden">
+          <!-- <div class="sticky z-20 top-1 sm:hidden">
             <button
               @click="isOpen = !isOpen"
               type="button"
@@ -37,13 +37,22 @@
                 ></path>
               </svg>
             </button>
+          </div> -->
+          <div class="sticky bottom-0 w-full bg-red-500 sm:hidden">
+            <div class="flex flex-row items-center justify-center w-full h-full">
+              <AppHeaderLinks
+                :showModal="showModal"
+                :isOpen="true"
+                class="flex flex-row items-center justify-center w-full"
+              />
+            </div>
           </div>
 
           <div>
             <a href="/" class="flex items-center w-full">
               <span
                 class="text-2xl font-general-semibold text-primary-dark dark:text-primary-light sm:text-3xl"
-                >J</span
+                ></span
               >
             </a>
           </div>

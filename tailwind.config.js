@@ -42,6 +42,12 @@ export default {
           xl: "6rem",
           "2xl": "8rem",
         },
+      },
+      backgroundImage: {
+        'grid-pattern': "linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px)"
+      },
+      backgroundSize: {
+        'grid-size': '20px 20px',
       }
     },
   },
