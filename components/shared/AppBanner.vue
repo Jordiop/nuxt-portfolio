@@ -5,7 +5,7 @@
       <ReusableCard class="relative flex items-center justify-center order-2 col-span-1 row-span-1 text-gray-600 bg-gray-200 shadow-xl rounded-3xl md:order-1 hover:transition-transform hover:scale-105 peer" title="Years" subtitle="experience" content="2" />
       <!--WEATHER-->
       <div
-        class="flex items-center justify-center order-9 col-span-2 row-span-1 p-2 text-white bg-gray-200 shadow-xl md:col-span-1 rounded-3xl hover:transition-transform hover:scale-105 peer md:order-3">
+        class="flex items-center justify-center order-9 col-span-2 row-span-1 text-white shadow-xl md:col-span-1 rounded-3xl hover:transition-transform hover:scale-105 peer md:order-3">
         <WeatherWidget />
       </div>
       <!--EMPTY 2-->

@@ -1,25 +1,127 @@
+<style scoped>
+  .cardContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(251, 251, 251);
+    border: 1px solid rgba(255, 255, 255, 0.089);
+    backdrop-filter: blur(30px);
+    border-radius: 15px
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .city {
+    font-weight: 700;
+    font-size: 0.9em;
+    letter-spacing: 1.2px;
+    color: gray;
+    text-transform: capitalize;
+  }
+
+  .weather {
+    font-weight: 500;
+    font-size: 0.7em;
+    letter-spacing: 1.2px;
+    color: gray;
+  }
+
+  .temp {
+    font-size: 1.8em;
+    color: gray;
+  }
+
+  .minmaxContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .min,
+  .max {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0px 20px;
+    gap: 4px;
+  }
+
+  .max {
+    align-items: flex-start;
+    border-left: 2px solid gray;
+  }
+
+  .maxHeading,
+  .minHeading {
+    font-size: 0.7em;
+    font-weight: 600;
+    color: gray;
+  }
+
+  .maxTemp,
+  .minTemp {
+    font-size: 0.6em;
+    font-weight: 500;
+    color: gray;
+  }
+
+  .cardContainer::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(144, 161, 255);
+    z-index: -1;
+    border-radius: 50%;
+    left: 100px;
+    top: 50px;
+    transition: all 1s;
+  }
+
+  .cardContainer:hover::before {
+    transform: translate(-50px, 50px);
+  }
+</style>
+
 <template>
-    <div class="flex flex-col w-full h-full p-5 bg-white rounded-3xl" v-if="weather">
-        <div class="w-full text-gray-600">
-          <!--location icon-->
-          <span class="flex flex-row items-center text-xl">
-            <img width="40" height="40" class="mr-2" src="https://img.icons8.com/ios/50/marker--v1.png" alt="marker--v1"/>
-            {{ weather.location.name }}, 
-            {{ weather.location.region }}
-          </span>
-          <span class="flex flex-row mt-5">
-            <!--temperature icon-->
-            <img width="30" height="20" class="mr-2" src="https://img.icons8.com/ios/50/thermometer--v1.png" alt="thermometer--v1"/>
-            <span class="text-2xl">{{ weather.current.temp_c }}°C</span>
-          </span>
-          <span class="flex flex-row mt-5">
-            <!--weather icon-->
-            <img width="50" height="50" class="mr-2" :src="weather.current.condition.icon" :alt="weather.current.condition.text"/>
-            {{ weather.current.condition.text }}
-          </span>
+  <div class="w-full h-full cardContainer" v-if="weather">
+    <div class="card">
+      <p class="city">{{ weather.location.name || '' }}</p>
+      <p class="weather">{{ weather.current.condition.text || '' }}</p>
+      <img
+          id="image0"
+          width="100"
+          height="100"
+          x="0"
+          y="0"
+          :src="weather.current.condition.icon"
+        ></img>
+      <p class="temp">{{ weather.current.temp_c + 'º' || '' }}</p>
+      <div class="minmaxContainer">
+        <div class="min">
+          <p class="minHeading">Pressure</p>
+          <p class="minTemp">{{ weather.current.pressure_mb || '' }}</p>
         </div>
+        <div class="max">
+          <p class="maxHeading">Wind</p>
+          <p class="maxTemp">{{ weather.current.wind_kph || '' }}</p>
+        </div>
+      </div>
     </div>
+  </div>
 </template>
+
 <script>
 import { getCurrentWeather } from '@/services/weather'
 export default {
