@@ -1,7 +1,7 @@
 <template>
-    <div class="grid w-full grid-cols-2 grid-rows-1 bg-white">
+    <div class="grid w-full h-full grid-cols-2 grid-rows-1">
         <img :src="image" class="h-full col-span-1 row-span-1 overflow-hidden saturate-50 rounded-3xl filter blur-xs contrast-10 sepia-10" />
-        <div class="flex flex-col justify-between w-full col-span-1 row-span-1 ml-2 text-xs font-bold text-black items-left">
+        <div class="flex flex-col w-full col-span-1 row-span-1 my-auto text-xs font-bold text-black items-left">
             <span class="text-xs font-bold text-left text-black">{{ nowOrLast }}</span>
             <span class="w-full mt-2 text-xl text-left bg-opacity-20 rounded-b-3xl backdrop-blur-sm backdrop-opacity-30">{{ currentTrackStr }}</span>
         </div>

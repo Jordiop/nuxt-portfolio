@@ -15,7 +15,7 @@
                             Hello, I'm <span class="text-gray-600">Jordi Osarenkhoe</span>
                         </h2>
                         <p class="my-6 text-base text-gray-500 sm:mt-5 sm:text-sm sm:max-w-xl sm:mx-auto md:mt-5 md:text-md lg:mx-0">
-                            I'm a software engineer with a passion for building web apps and data representation.
+                            I'm a software engineer with passion for building web apps and data representation.
                         </p>
                     </div>
                 </div>

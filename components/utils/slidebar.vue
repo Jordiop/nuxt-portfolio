@@ -1,10 +1,10 @@
 <template>
     <div class="main-container">
       <div :class="['main-element']" :style="customStyle">
-        <div class="flex flex-row mx-2 space-between container-element-bar">
+        <div class="flex flex-row container-element-bar">
           <slot></slot>
         </div>
-        <div class="flex flex-row container-element-bar space-between">
+        <div class="flex flex-row container-element-bar">
           <slot></slot>
         </div>
       </div>
@@ -28,7 +28,7 @@
       },
       delay: {
         type: String,
-        default: '0s'
+        default: '2s'
       },
       paused: {
         type: Boolean,

@@ -1,8 +1,8 @@
 <template>
   <slidebar>
     <div v-for="technology in technologies" :key="technology.key">
-      <div class="pt-4 mx-8">
-        <img class="p-1 max-h-8 max-w-8" :src="technology.source">
+      <div class="p-2 pt-4 mx-8 bg-white rounded-md bg-opacity-70 ">
+        <img class="w-20 h-20 p-1" :src="technology.source">
       </div>
     </div>
   </slidebar>
@@ -26,7 +26,7 @@ export default {
         {
           key: 'nuxt',
           name: 'Nuxt.js',
-          source: 'https://upload.wikimedia.org/wikipedia/commons/a/ae/Nuxt_logo.svg'
+          source: 'https://upload.wikimedia.org/wikipedia/commons/4/45/NuxtJS_Logo.png'
         },
         {
           key: 'javascript',
@@ -47,6 +47,14 @@ export default {
           key: 'laravel',
           name: 'Laravel',
           source: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/50px-Laravel.svg.png'
+        }, 
+        {
+          key: 'nestjs',
+          name: 'NestJS',
+          source: 'https://nestjs.com/logo-small-gradient.d792062c.svg'
+        },
+        {
+
         }
       ]
     }

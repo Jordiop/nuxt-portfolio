@@ -1,85 +1,30 @@
 <template>
   <ReusablePatter>
     <div class="grid w-full grid-cols-2 gap-3 p-10 md:h-full md:grid-cols-6 md:grid-rows-3">
-      <!--EMPTY-->
-      <ReusableCard class="relative flex items-center justify-center order-2 col-span-1 row-span-1 text-gray-600 bg-gray-200 shadow-xl rounded-3xl md:order-1 hover:transition-transform hover:scale-105 peer" title="Years" subtitle="experience" content="2" />
+      <!--Years-->
+      <ReusableCard class="relative flex items-center justify-center order-2 col-span-1 row-span-1 text-gray-600 bg-gray-200 shadow-xl rounded-3xl md:order-1 peer" title="Years" subtitle="experience" content="2" />
       <!--WEATHER-->
-      <div
-        class="flex items-center justify-center order-9 col-span-2 row-span-1 text-white shadow-xl md:col-span-1 rounded-3xl hover:transition-transform hover:scale-105 peer md:order-3">
-        <WeatherWidget />
-      </div>
+      <WeatherWidget class="flex items-center justify-center order-9 col-span-2 row-span-1 text-white shadow-xl md:col-span-1 rounded-3xl peer md:order-3"/>
       <!--EMPTY 2-->
-      <div class="grid order-10 w-full col-span-1 grid-rows-3 row-span-1 gap-3 rounded-3xl md:order-4">
-        <div class="flex w-full h-full p-2 bg-gray-200 shadow-xl rounded-3xl hover:transition-transform hover:scale-105 peer">
-          <div class="w-full h-full overflow-hidden bg-white rounded-3xl">
-            <div
-              class="w-full h-full flex flex-col gap-4 items-center p-4 border-[1px] border-gray-100 rounded-md bg-gray-50">
-              <a target="_blank" rel="noreferrer" class="flex items-center w-full gap-2"
-                href="https://twitter.com/jordiop26">
-                <div tabindex="0">
-                  <div
-                    class="flex items-center justify-center bg-gradient-to-b from-blue-400 to to-blue-600 border-blue-500 border-[1px] p-2 w-fit rounded-lg">
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
-                      class="w-5 h-5 text-white drop-shadow-md" height="1em" width="1em"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M21.543 7.104c.015.211.015.423.015.636 0 6.507-4.954 14.01-14.01 14.01v-.003A13.94 13.94 0 0 1 0 19.539a9.88 9.88 0 0 0 7.287-2.041 4.93 4.93 0 0 1-4.6-3.42 4.916 4.916 0 0 0 2.223-.084A4.926 4.926 0 0 1 .96 9.167v-.062a4.887 4.887 0 0 0 2.235.616A4.928 4.928 0 0 1 1.67 3.148 13.98 13.98 0 0 0 11.82 8.292a4.929 4.929 0 0 1 8.39-4.49 9.868 9.868 0 0 0 3.128-1.196 4.941 4.941 0 0 1-2.165 2.724A9.828 9.828 0 0 0 24 4.555a10.019 10.019 0 0 1-2.457 2.549z">
-                      </path>
-                    </svg></div>
-                </div>
-                <div>
-                  <p class="text-sm font-bold text-gray-700">Jordiop</p>
-                  <p class="text-xs text-gray-500">@jordiop26</p>
-                </div>
-              </a></div>
-          </div>
+      <div class="grid order-10 w-full grid-cols-2 col-span-1 grid-rows-2 row-span-1 gap-3 p-2rounded-3xl md:order-4">
+        <div class="flex items-center justify-center text-white bg-white border border-gray-100 shadow-xl rounded-3xl ">
+          <ReusableIcons :width="'80px'" :height="'80px'" :icon="'twitter'" :color="'gray'" />
         </div>
-        <div class="w-full h-full p-2 bg-gray-200 shadow-xl rounded-3xl hover:transition-transform hover:scale-105 peer">
-          <div class="w-full h-full overflow-hidden bg-white rounded-3xl">
-            <div
-              class="w-full h-full flex flex-col gap-4 items-center p-4 border-[1px] border-gray-100 rounded-md bg-gray-50">
-              <a target="_blank" rel="noreferrer" class="flex items-center w-full gap-2"
-                href="https://instagram.com/jordiioop">
-                <div tabindex="0">
-                  <div
-                    class="flex items-center justify-center bg-gradient-to-b from-pink-400 to to-yellow-600 border-white border-[1px] p-2 w-fit rounded-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" x="0px" y="0px" viewBox="0 0 48 48">
-                      <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"></stop><stop offset=".328" stop-color="#ff543f"></stop><stop offset=".348" stop-color="#fc5245"></stop><stop offset=".504" stop-color="#e64771"></stop><stop offset=".643" stop-color="#d53e91"></stop><stop offset=".761" stop-color="#cc39a4"></stop><stop offset=".841" stop-color="#c837ab"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"></stop><stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"></path><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"></path>
-                      </svg></div>
-                </div>
-                <div>
-                  <p class="text-sm font-bold text-gray-700">Jordiop</p>
-                  <p class="text-xs text-gray-500">@jordiioop</p>
-                </div>
-              </a></div>
-          </div>
+        <div class="flex items-center justify-center text-white bg-white border border-gray-100 shadow-xl rounded-3xl ">
+          <ReusableIcons :width="'80px'" :height="'80px'" :icon="'linkedin'" :color="'gray'" />
         </div>
-        <div class="w-full h-full p-2 bg-gray-200 shadow-xl rounded-3xl hover:transition-transform hover:scale-105 peer">
-          <div class="w-full h-full overflow-hidden bg-white rounded-3xl">
-            <div
-              class="w-full h-full flex flex-col gap-4 items-center p-4 border-[1px] border-gray-100 rounded-md bg-gray-50">
-              <a target="_blank" rel="noreferrer" class="flex items-center w-full gap-2"
-                href="">
-                <div tabindex="0">
-                  <div
-                    class="flex items-center justify-center bg-gradient-to-b from-blue-400 to to-blue-600 border-blue-500 border-[1px] p-2 w-fit rounded-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="w-5 h-5" viewBox="0 0 50 50">
-                      <path fill="white" d="M 18.90625 7 C 18.90625 7 12.539063 7.4375 8.375 10.78125 C 8.355469 10.789063 8.332031 10.800781 8.3125 10.8125 C 7.589844 11.480469 7.046875 12.515625 6.375 14 C 5.703125 15.484375 4.992188 17.394531 4.34375 19.53125 C 3.050781 23.808594 2 29.058594 2 34 C 1.996094 34.175781 2.039063 34.347656 2.125 34.5 C 3.585938 37.066406 6.273438 38.617188 8.78125 39.59375 C 11.289063 40.570313 13.605469 40.960938 14.78125 41 C 15.113281 41.011719 15.429688 40.859375 15.625 40.59375 L 18.0625 37.21875 C 20.027344 37.683594 22.332031 38 25 38 C 27.667969 38 29.972656 37.683594 31.9375 37.21875 L 34.375 40.59375 C 34.570313 40.859375 34.886719 41.011719 35.21875 41 C 36.394531 40.960938 38.710938 40.570313 41.21875 39.59375 C 43.726563 38.617188 46.414063 37.066406 47.875 34.5 C 47.960938 34.347656 48.003906 34.175781 48 34 C 48 29.058594 46.949219 23.808594 45.65625 19.53125 C 45.007813 17.394531 44.296875 15.484375 43.625 14 C 42.953125 12.515625 42.410156 11.480469 41.6875 10.8125 C 41.667969 10.800781 41.644531 10.789063 41.625 10.78125 C 37.460938 7.4375 31.09375 7 31.09375 7 C 31.019531 6.992188 30.949219 6.992188 30.875 7 C 30.527344 7.046875 30.234375 7.273438 30.09375 7.59375 C 30.09375 7.59375 29.753906 8.339844 29.53125 9.40625 C 27.582031 9.09375 25.941406 9 25 9 C 24.058594 9 22.417969 9.09375 20.46875 9.40625 C 20.246094 8.339844 19.90625 7.59375 19.90625 7.59375 C 19.734375 7.203125 19.332031 6.964844 18.90625 7 Z M 18.28125 9.15625 C 18.355469 9.359375 18.40625 9.550781 18.46875 9.78125 C 16.214844 10.304688 13.746094 11.160156 11.4375 12.59375 C 11.074219 12.746094 10.835938 13.097656 10.824219 13.492188 C 10.816406 13.882813 11.039063 14.246094 11.390625 14.417969 C 11.746094 14.585938 12.167969 14.535156 12.46875 14.28125 C 17.101563 11.410156 22.996094 11 25 11 C 27.003906 11 32.898438 11.410156 37.53125 14.28125 C 37.832031 14.535156 38.253906 14.585938 38.609375 14.417969 C 38.960938 14.246094 39.183594 13.882813 39.175781 13.492188 C 39.164063 13.097656 38.925781 12.746094 38.5625 12.59375 C 36.253906 11.160156 33.785156 10.304688 31.53125 9.78125 C 31.59375 9.550781 31.644531 9.359375 31.71875 9.15625 C 32.859375 9.296875 37.292969 9.894531 40.3125 12.28125 C 40.507813 12.460938 41.1875 13.460938 41.8125 14.84375 C 42.4375 16.226563 43.09375 18.027344 43.71875 20.09375 C 44.9375 24.125 45.921875 29.097656 45.96875 33.65625 C 44.832031 35.496094 42.699219 36.863281 40.5 37.71875 C 38.5 38.496094 36.632813 38.84375 35.65625 38.9375 L 33.96875 36.65625 C 34.828125 36.378906 35.601563 36.078125 36.28125 35.78125 C 38.804688 34.671875 40.15625 33.5 40.15625 33.5 C 40.570313 33.128906 40.605469 32.492188 40.234375 32.078125 C 39.863281 31.664063 39.226563 31.628906 38.8125 32 C 38.8125 32 37.765625 32.957031 35.46875 33.96875 C 34.625 34.339844 33.601563 34.707031 32.4375 35.03125 C 32.167969 35 31.898438 35.078125 31.6875 35.25 C 29.824219 35.703125 27.609375 36 25 36 C 22.371094 36 20.152344 35.675781 18.28125 35.21875 C 18.070313 35.078125 17.8125 35.019531 17.5625 35.0625 C 16.394531 34.738281 15.378906 34.339844 14.53125 33.96875 C 12.234375 32.957031 11.1875 32 11.1875 32 C 10.960938 31.789063 10.648438 31.699219 10.34375 31.75 C 9.957031 31.808594 9.636719 32.085938 9.53125 32.464844 C 9.421875 32.839844 9.546875 33.246094 9.84375 33.5 C 9.84375 33.5 11.195313 34.671875 13.71875 35.78125 C 14.398438 36.078125 15.171875 36.378906 16.03125 36.65625 L 14.34375 38.9375 C 13.367188 38.84375 11.5 38.496094 9.5 37.71875 C 7.300781 36.863281 5.167969 35.496094 4.03125 33.65625 C 4.078125 29.097656 5.0625 24.125 6.28125 20.09375 C 6.90625 18.027344 7.5625 16.226563 8.1875 14.84375 C 8.8125 13.460938 9.492188 12.460938 9.6875 12.28125 C 12.707031 9.894531 17.140625 9.296875 18.28125 9.15625 Z M 18.5 21 C 15.949219 21 14 23.316406 14 26 C 14 28.683594 15.949219 31 18.5 31 C 21.050781 31 23 28.683594 23 26 C 23 23.316406 21.050781 21 18.5 21 Z M 31.5 21 C 28.949219 21 27 23.316406 27 26 C 27 28.683594 28.949219 31 31.5 31 C 34.050781 31 36 28.683594 36 26 C 36 23.316406 34.050781 21 31.5 21 Z M 18.5 23 C 19.816406 23 21 24.265625 21 26 C 21 27.734375 19.816406 29 18.5 29 C 17.183594 29 16 27.734375 16 26 C 16 24.265625 17.183594 23 18.5 23 Z M 31.5 23 C 32.816406 23 34 24.265625 34 26 C 34 27.734375 32.816406 29 31.5 29 C 30.183594 29 29 27.734375 29 26 C 29 24.265625 30.183594 23 31.5 23 Z"></path>
-                      </svg></div>
-                </div>
-                <div>
-                  <p class="text-sm font-bold text-gray-700">Jordiop</p>
-                  <p class="text-xs text-gray-500">Jordiop#3304</p>
-                </div>
-              </a></div>
-          </div>
+        <div class="flex items-center justify-center text-white bg-white border border-gray-100 shadow-xl rounded-3xl ">
+          <ReusableIcons :width="'80px'" :height="'80px'" :icon="'instagram'" :color="'gray'" />
+        </div>
+        <div class="flex items-center justify-center text-white bg-white border border-gray-100 shadow-xl rounded-3xl ">
+          <ReusableIcons :width="'80px'" :height="'80px'" :icon="'discord'" :color="'gray'" />
         </div>
       </div>
       <!--EDAD-->
-      <ReusableCard class="relative flex items-center justify-center order-2 col-span-1 row-span-1 text-gray-600 bg-gray-200 shadow-xl rounded-3xl md:order-5 hover:transition-transform hover:scale-105 peer" title="Age" subtitle="years old" content="23" />
+      <ReusableCard class="relative flex items-center justify-center order-2 col-span-1 row-span-1 text-gray-600 bg-gray-200 shadow-xl rounded-3xl md:order-5" title="Age" subtitle="years old" content="23" />
       <!--TECH STACK-->
       <div
-        class="flex items-center justify-center order-7 col-span-2 row-span-1 p-2 text-gray-600 duration-300 transform bg-gray-200 shadow-xl md:relative md:col-span-2 hover:transition-transform hover:scale-105 peer rounded-3xl">
+        class="flex items-center justify-center order-7 col-span-2 row-span-1 text-gray-600 duration-300 transform bg-gray-200 shadow-xl md:relative md:col-span-2 rounded-3xl">
         <div class="w-full h-full shadow-md rounded-3xl card-hover bg-gray-50 shadow-indigo-900/5"
           style="--x-rotation: 0.8476068806854309deg; --y-rotation: -6.7344108200621555deg;">
           <div class="w-full h-full p-6 rounded-md">
@@ -218,27 +163,20 @@
         </div>
       </div>
       <!--SKILLS-->
-      <div
-        class="flex flex-col items-center justify-between order-5 h-full col-span-2 row-span-1 p-2 text-white bg-gray-200 shadow-xl md:order-7 rounded-3xl">
-        <div class="flex flex-col justify-between w-full h-full p-2 bg-gray-50 rounded-3xl">
+      <div class="relative flex flex-col items-center justify-between order-5 h-full col-span-2 row-span-1 gap-2 text-white border shadow-md md:order-7 rounded-3xl">
+        <div class="flex flex-row w-full row-span-1 gap-3 h-1/2">
+          <div class="w-2/3 h-full bg-white border border-gray-100 rounded-3xl">
+            <SpotifyCard />
+          </div>
+          <div class="w-1/3 h-full bg-white border border-gray-100 rounded-3xl">
+            empty 2
+          </div>
+        </div>
+        <div class="relative flex flex-col justify-between w-full row-span-1 p-2 border-gray-100 h-1/2 bg-gray-50 rounded-3xl">
           <p class="flex flex-row items-center justify-start gap-2 p-1 mt-3 ml-4 leading-tight text-gray-500">
             <img src="https://img.icons8.com/?size=100&id=58861&format=png&color=000000" class="w-5 h-5" />
             <span>Skills</span>
           </p>
-          <div class="grid w-full grid-cols-3 gap-2 ">
-            <div class="flex flex-col items-center justify-center p-1 rounded-lg shadow-md border-opacity-5">
-              <img src="https://img.icons8.com/color/48/000000/vue-js.png" class="w-12 h-12" />
-              <p class="text-xs text-gray-600">Vue.js</p>
-            </div>
-            <div class="flex flex-col items-center justify-center p-1 rounded-lg shadow-md border-opacity-5">
-              <img src="https://img.icons8.com/color/48/000000/javascript.png" class="w-12 h-12" />
-              <p class="text-xs text-gray-600">JavaScript</p>
-            </div>
-            <div class="flex flex-col items-center justify-center p-1 rounded-lg shadow-md border-opacity-5">
-              <img src="https://img.icons8.com/?size=100&id=4PiNHtUJVbLs&format=png&color=000000" class="w-12 h-12" />
-              <p class="text-xs text-gray-600">Tailwind CSS</p>
-            </div>
-          </div>
           <AppScroll />
         </div>
   
@@ -250,12 +188,12 @@
       </div>
       <!--GITHUB-->
       <div
-        class="flex items-center justify-center order-8 col-span-1 row-span-1 p-2 text-white bg-gray-200 shadow-xl md:order-8 rounded-3xl hover:transition-transform hover:scale-105 peer">
+        class="flex items-center justify-center order-8 col-span-1 row-span-1 text-white bg-gray-200 shadow-xl md:order-8 rounded-3xl hover:transition-transform hover:scale-105 peer">
         <Github />
       </div>
       <!--IDIOMES-->
       <div
-        class="flex items-center justify-between order-3 col-span-1 row-span-1 p-2 text-white bg-gray-200 shadow-xl md:order-9 rounded-3xl hover:transition-transform hover:scale-105 peer">
+        class="flex items-center justify-between order-3 col-span-1 row-span-1 text-white bg-gray-200 shadow-xl md:order-9 rounded-3xl hover:transition-transform hover:scale-105 peer">
         <div class="flex flex-col w-full h-full p-1 bg-white rounded-3xl">
           <div>
             <p class="flex flex-row items-center justify-start gap-2 p-1 mt-3 ml-4 leading-tight text-gray-500">
@@ -286,8 +224,6 @@
         </div>
       </div>
       <!---->
-      <SpotifyCard
-        class="flex items-center justify-center w-full col-span-2 row-span-1 p-2 text-white bg-gray-200 shadow-xl md:order-10 rounded-3xl" />
     </div>
   </ReusablePatter>
   

@@ -38,5 +38,6 @@
   <style>
   .bg-grid-pattern {
     transition: background-position 0.05s ease; 
+    background-color: #edeef2ca;
   }
   </style>

@@ -1,3 +1,56 @@
+<template>
+  <div class="w-full h-full cardContainer" v-if="weather">
+    <div class="card">
+      <p class="capitalize city">{{ weather.location.name || '' }}</p>
+      <p class="weather">{{ weather.current.condition.text || '' }}</p>
+      <img
+          id="image0"
+          width="100"
+          height="100"
+          x="0"
+          y="0"
+          :src="weather.current.condition.icon"
+        ></img>
+      <p class="temp">{{ weather.current.temp_c + 'º' || '' }}</p>
+      <div class="minmaxContainer">
+        <div class="min">
+          <p class="minHeading">Pressure</p>
+          <p class="minTemp">{{ weather.current.pressure_mb || '' }}</p>
+        </div>
+        <div class="max">
+          <p class="maxHeading">Wind</p>
+          <p class="maxTemp">{{ weather.current.wind_kph || '' }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import { getCurrentWeather } from '@/services/weather'
+export default {
+  name: 'WeatherWidget',
+  data() {
+    return {
+      weather: null
+    }
+  },
+  mounted() {
+    this.fetchWeather()
+  },
+  methods: {
+    async fetchWeather() {
+      try {
+        const response = await getCurrentWeather()
+        this.weather = await response
+      } catch (e) {
+        console.error(e)
+      }
+    }
+  },
+}
+</script>
+
 <style scoped>
   .cardContainer {
     position: relative;
@@ -23,7 +76,7 @@
 
   .city {
     font-weight: 700;
-    font-size: 0.9em;
+    font-size: 1.2em;
     letter-spacing: 1.2px;
     color: gray;
     text-transform: capitalize;
@@ -93,56 +146,3 @@
     transform: translate(-50px, 50px);
   }
 </style>
-
-<template>
-  <div class="w-full h-full cardContainer" v-if="weather">
-    <div class="card">
-      <p class="city">{{ weather.location.name || '' }}</p>
-      <p class="weather">{{ weather.current.condition.text || '' }}</p>
-      <img
-          id="image0"
-          width="100"
-          height="100"
-          x="0"
-          y="0"
-          :src="weather.current.condition.icon"
-        ></img>
-      <p class="temp">{{ weather.current.temp_c + 'º' || '' }}</p>
-      <div class="minmaxContainer">
-        <div class="min">
-          <p class="minHeading">Pressure</p>
-          <p class="minTemp">{{ weather.current.pressure_mb || '' }}</p>
-        </div>
-        <div class="max">
-          <p class="maxHeading">Wind</p>
-          <p class="maxTemp">{{ weather.current.wind_kph || '' }}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
-
-<script>
-import { getCurrentWeather } from '@/services/weather'
-export default {
-  name: 'WeatherWidget',
-  data() {
-    return {
-      weather: null
-    }
-  },
-  mounted() {
-    this.fetchWeather()
-  },
-  methods: {
-    async fetchWeather() {
-      try {
-        const response = await getCurrentWeather()
-        this.weather = await response
-      } catch (e) {
-        console.error(e)
-      }
-    }
-  },
-}
-</script>
