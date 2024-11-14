@@ -18,7 +18,7 @@
     </div>
 </template>
 <script>
-import { getKeyboardById } from '@/services/keyboards'
+
 export default {
     name: 'KeyboardWidget',
     data() {
@@ -26,18 +26,5 @@ export default {
             keyboard: null
         }
     },
-    mounted() {
-        this.fetchKeyboard()
-    },
-    methods: {
-        async fetchKeyboard() {
-            try {
-                const response = await getKeyboardById(this.$route.params.id)
-                this.keyboard = await response
-            } catch (e) {
-                console.error(e)
-            }
-        }
-    },
-}
+  }
 </script>
