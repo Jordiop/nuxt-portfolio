@@ -1,7 +1,7 @@
 <template>
   <slidebar>
     <div v-for="technology in technologies" :key="technology.key">
-      <div class="p-2 pt-4 mx-8 bg-white rounded-md bg-opacity-70 ">
+      <div class="p-2 pt-3 mx-8 rounded-md bg-opacity-70 ">
         <img class="w-20 h-20 p-1" :src="technology.source">
       </div>
     </div>

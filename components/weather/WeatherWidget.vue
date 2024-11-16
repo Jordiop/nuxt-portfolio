@@ -1,29 +1,35 @@
 <template>
-  <div class="w-full h-full cardContainer" v-if="weather">
-    <div class="card">
-      <p class="capitalize city">{{ weather.location.name || '' }}</p>
-      <p class="weather">{{ weather.current.condition.text || '' }}</p>
-      <img
-          id="image0"
-          width="100"
-          height="100"
-          x="0"
-          y="0"
-          :src="weather.current.condition.icon"
-        ></img>
-      <p class="temp">{{ weather.current.temp_c + 'º' || '' }}</p>
-      <div class="minmaxContainer">
-        <div class="min">
-          <p class="minHeading">Pressure</p>
-          <p class="minTemp">{{ weather.current.pressure_mb || '' }}</p>
-        </div>
-        <div class="max">
-          <p class="maxHeading">Wind</p>
-          <p class="maxTemp">{{ weather.current.wind_kph || '' }}</p>
+  <div>
+    <div class="w-full h-full cardContainer" v-if="weather">
+      <div class="card">
+        <p class="capitalize city">{{ weather.location.name || '' }}</p>
+        <p class="weather">{{ weather.current.condition.text || '' }}</p>
+        <img
+            id="image0"
+            width="100"
+            height="100"
+            x="0"
+            y="0"
+            :src="weather.current.condition.icon"
+          ></img>
+        <p class="temp">{{ weather.current.temp_c + 'º' || '' }}</p>
+        <div class="minmaxContainer">
+          <div class="min">
+            <p class="minHeading">Pressure</p>
+            <p class="minTemp">{{ weather.current.pressure_mb || '' }}</p>
+          </div>
+          <div class="max">
+            <p class="maxHeading">Wind</p>
+            <p class="maxTemp">{{ weather.current.wind_kph || '' }}</p>
+          </div>
         </div>
       </div>
     </div>
+    <div v-else>
+      <p>Loading...</p>
+    </div>
   </div>
+  
 </template>
 
 <script>

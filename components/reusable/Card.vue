@@ -5,6 +5,7 @@
             <p class="text-4xl font-bold md:text-8xl">{{ content }}</p>
             <p class="text-xs font-semibold text-center uppercase md:text-xl">{{ title }}</p>
         </div>
+        <slot />
     </div>
 </template>
 <script>

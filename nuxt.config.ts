@@ -1,14 +1,10 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-const titleTemplate = 'Portfolio'
-const titleChunk = titleTemplate ? `%s | ${titleTemplate}` : '%s'
-
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
-      titleTemplate: titleChunk ? `${titleChunk} - Nuxt` : 'Nuxt',
+      titleTemplate: `${require('./package.json').name}`,
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -25,7 +21,6 @@ export default defineNuxtConfig({
     },
   },
   runtimeConfig: {
-    // Private keys are only available on the server side
     public: {
       spotifyClientID: process.env.SPOTIFY_CLIENT_ID,
       spotifyClientSecret: process.env.SPOTIFY_CLIENT_SECRET,

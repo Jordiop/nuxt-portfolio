@@ -2,9 +2,12 @@
   <ReusablePatter>
     <div class="grid w-full grid-cols-2 gap-3 p-10 md:h-full md:grid-cols-6 md:grid-rows-3">
       <!--Years-->
-      <ReusableCard class="relative flex items-center justify-center order-2 col-span-1 row-span-1 text-gray-600 bg-gray-200 shadow-xl rounded-3xl md:order-1 peer" title="Years" subtitle="experience" content="2" />
+      <ReusableCard
+        class="relative flex items-center justify-center order-2 col-span-1 row-span-1 text-gray-600 bg-gray-200 shadow-xl rounded-3xl md:order-1 peer"
+        title="Years" subtitle="experience" content="2" />
       <!--WEATHER-->
-      <WeatherWidget class="flex items-center justify-center order-9 col-span-2 row-span-1 text-white shadow-xl md:col-span-1 rounded-3xl peer md:order-3"/>
+      <WeatherWidget
+        class="flex items-center justify-center order-9 col-span-2 row-span-1 text-white shadow-xl md:col-span-1 rounded-3xl peer md:order-3" />
       <!--EMPTY 2-->
       <div class="grid order-10 w-full grid-cols-2 col-span-1 grid-rows-2 row-span-1 gap-3 p-2rounded-3xl md:order-4">
         <div class="flex items-center justify-center text-white bg-white border border-gray-100 shadow-xl rounded-3xl ">
@@ -21,7 +24,9 @@
         </div>
       </div>
       <!--EDAD-->
-      <ReusableCard class="relative flex items-center justify-center order-2 col-span-1 row-span-1 text-gray-600 bg-gray-200 shadow-xl rounded-3xl md:order-5" title="Age" subtitle="years old" content="23" />
+      <ReusableCard
+        class="relative flex items-center justify-center order-2 col-span-1 row-span-1 text-gray-600 bg-gray-200 shadow-xl rounded-3xl md:order-5"
+        title="Age" subtitle="years old" content="23" />
       <!--TECH STACK-->
       <div
         class="flex items-center justify-center order-7 col-span-2 row-span-1 text-gray-600 duration-300 transform bg-gray-200 shadow-xl md:relative md:col-span-2 rounded-3xl">
@@ -45,6 +50,17 @@
                       <path d="M2 16H22V19C22 19.5523 21.5523 20 21 20H3C2.44772 20 2 19.5523 2 19V16Z"
                         stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
                     </svg>MacBook Air M2</p>
+                  <!-- mac mini -->
+                  <p class="flex items-center gap-2 leading-tight"><svg class="w-4 text-gray-600"
+                      xmlns="http://www.www3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M5.125 13C5.125 13.4832 5.51675 13.875 6 13.875C6.48325 13.875 6.875 13.4832 6.875 13C6.875 12.5168 6.48325 12.125 6 12.125C5.51675 12.125 5.125 12.5168 5.125 13ZM17.125 13C17.125 13.4832 17.5168 13.875 18 13.875C18.4832 13.875 18.875 13.4832 18.875 13C18.875 12.5168 18.4832 12.125 18 12.125C17.5168 12.125 17.125 12.5168 17.125 13ZM13.125 13C13.125 13.4832 13.5168 13.875 14 13.875C14.4832 13.875 14.875 13.4832 14.875 13C14.875 12.5168 14.4832 12.125 14 12.125C13.5168 12.125 13.125 12.5168 13.125 13ZM9.125 13C9.125 13.4832 9.51675 13.875 10 13.875C10.4832 13.875 10.875 13.4832 10.875 13C10.875 12.5168 10.4832 12.125 10 12.125C9.51675 12.125 9.125 12.5168 9.125 13ZM5.125 17C5.125 17.4832 5.51675 17.875 6 17.875C6.48325 17.875 6.875 17.4832 6.875 17C6.875 16.5168 6.48325 16.125 6 16.125C5.51675
+                        16.125 5.125 16.5168 5.125 17ZM17.125 17C17.125 17.4832 17.5168 17.875 18 17.875C18.4832 17.875 18.875 17.4832 18.875 17C18.875 16.5168 18.4832 16.125 18 16.125C17.5168 16.125 17.125 16.5168 17.125 17Z"
+                        fill="currentColor" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
+                      <path
+                        d="M10 17H14M6 9V6C6 5.44772 6.44772 5 7 5H17C17.5523 5 18 4.55228 18 4V3M3 9H21M3 15H21M3 9H21M3 15H21M3 9H21M3 15H21"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>Mac Mini M1</p>
                   <p class="flex items-center gap-2 leading-tight"><svg class="w-4 text-gray-600"
                       xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                       <path
@@ -60,9 +76,19 @@
                         d="M10 17H14M6 9V6C6 5.44772 6.44772 5 7 5H17C17.5523 5 18 4.55228 18 4V3M3 9H21C21.5523 9 22 9.44772 22 10V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V10C2 9.44772 2.44772 9 3 9Z"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>Keychron K3 V2</p>
+                  <p class="flex items-center gap-2 leading-tight"><svg class="w-4 text-gray-600"
+                      xmlns="http://www.ww3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V19C19 19.5523 18.5523 20 18 20H6C5.44772 20 5 19.5523 5 19V5Z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+                      <path
+                        d="M15 4.99988V19.0001M9 4.99988V19.0001M3 9H21M3 15H21M3 9H21M3 15H21M3 9H21M3 15H21"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>Logitech MX Master 3</p>
+                  
                 </div>
                 <div class="flex flex-col items-start h-full gap-2 pl-1 text-xs font-normal text-gray-500 md:pl-3">
-  
+
                 </div>
               </div>
               <div class="flex flex-col gap-3 text-sm">Software<div
@@ -163,23 +189,52 @@
         </div>
       </div>
       <!--SKILLS-->
-      <div class="relative flex flex-col items-center justify-between order-5 h-full col-span-2 row-span-1 gap-2 text-white border shadow-md md:order-7 rounded-3xl">
+      <div
+        class="relative flex flex-col items-center justify-between order-5 h-full col-span-2 row-span-1 gap-2 text-white border shadow-md md:order-7 rounded-3xl">
         <div class="flex flex-row w-full row-span-1 gap-3 h-1/2">
           <div class="w-2/3 h-full bg-white border border-gray-100 rounded-3xl">
             <SpotifyCard />
           </div>
           <div class="w-1/3 h-full bg-white border border-gray-100 rounded-3xl">
-            empty 2
+            <div
+              class="flex items-center justify-between order-3 w-full h-full col-span-1 row-span-1 text-white bg-gray-200 shadow-xl md:order-9 rounded-3xl peer">
+              <div class="flex flex-col justify-center w-full h-full p-1 bg-white rounded-3xl">
+                <div>
+                  <p class="flex flex-row items-center justify-start gap-2 p-1 mt-2 ml-3 leading-tight text-gray-500">
+                    <img src="https://img.icons8.com/ios/100/language.png" class="w-4 h-4" />
+                    <span>Languages</span>
+                  </p>
+                </div>
+                <div class="flex flex-row items-center justify-center w-full h-full">
+                  <span class="flex flex-row items-center justify-center w-full h-full mx-1">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Catalonia.svg/800px-Flag_of_Catalonia.svg.png"
+                      class="w-4 h-4 md:w-10 md:h-10">
+                  </span>
+                  <span class="flex flex-row items-center justify-center w-full h-full mx-1">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandera_de_Espa%C3%B1a_%28sin_escudo%29.svg/800px-Bandera_de_Espa%C3%B1a_%28sin_escudo%29.svg.png"
+                      class="w-4 h-4 md:w-10 md:h-10">
+                  </span>
+                  <span class="flex flex-row items-center justify-center w-full h-full mx-1">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/800px-Flag_of_the_United_Kingdom_%281-2%29.svg.png"
+                      class="w-4 h-4 md:w-10 md:h-10">
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="relative flex flex-col justify-between w-full row-span-1 p-2 border-gray-100 h-1/2 bg-gray-50 rounded-3xl">
-          <p class="flex flex-row items-center justify-start gap-2 p-1 mt-3 ml-4 leading-tight text-gray-500">
-            <img src="https://img.icons8.com/?size=100&id=58861&format=png&color=000000" class="w-5 h-5" />
+        <div
+          class="relative flex flex-col justify-between w-full row-span-1 border-gray-100 h-1/2 bg-gray-50 rounded-3xl">
+          <p class="flex flex-row items-center justify-start gap-2 p-1 mt-2 ml-3 leading-tight text-gray-500">
+            <img src="https://img.icons8.com/?size=100&id=58861&format=png&color=000000" class="w-4 h-4" />
             <span>Skills</span>
           </p>
           <AppScroll />
         </div>
-  
+
       </div>
       <!--IMATGE-->
       <div
@@ -191,42 +246,9 @@
         class="flex items-center justify-center order-8 col-span-1 row-span-1 text-white bg-gray-200 shadow-xl md:order-8 rounded-3xl hover:transition-transform hover:scale-105 peer">
         <Github />
       </div>
-      <!--IDIOMES-->
-      <div
-        class="flex items-center justify-between order-3 col-span-1 row-span-1 text-white bg-gray-200 shadow-xl md:order-9 rounded-3xl hover:transition-transform hover:scale-105 peer">
-        <div class="flex flex-col w-full h-full p-1 bg-white rounded-3xl">
-          <div>
-            <p class="flex flex-row items-center justify-start gap-2 p-1 mt-3 ml-4 leading-tight text-gray-500">
-              <img src="https://img.icons8.com/ios/100/language.png" class="w-5 h-5" />
-              <span>Languages</span>
-            </p>
-          </div>
-          <div class="flex flex-col items-center justify-start w-full h-full md:justify-center">
-            <span class="flex flex-row items-center justify-start w-full h-full mx-1 ml-20 md:ml-36">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Catalonia.svg/800px-Flag_of_Catalonia.svg.png"
-                class="w-4 h-4 mr-2 md:w-8 md:h-8">
-              <span class="text-xl font-bold text-gray-600">CAT</span>
-            </span>
-            <span class="flex flex-row items-center justify-start w-full h-full mx-1 ml-20 md:ml-36">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandera_de_Espa%C3%B1a_%28sin_escudo%29.svg/800px-Bandera_de_Espa%C3%B1a_%28sin_escudo%29.svg.png"
-                class="w-4 h-4 mr-2 md:w-8 md:h-8">
-              <span class="text-xl font-bold text-gray-600">ESP</span>
-            </span>
-            <span class="flex flex-row items-center justify-start w-full h-full mx-1 ml-20 md:ml-36">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/800px-Flag_of_the_United_Kingdom_%281-2%29.svg.png"
-                class="w-4 h-4 mr-2 md:w-8 md:h-8">
-              <span class="text-xl font-bold text-gray-600">ENG</span>
-            </span>
-          </div>
-        </div>
-      </div>
-      <!---->
     </div>
   </ReusablePatter>
-  
+
 </template>
 
 <script>
