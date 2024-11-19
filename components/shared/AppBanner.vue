@@ -11,13 +11,13 @@
       <!--EMPTY 2-->
       <div class="grid order-10 w-full grid-cols-2 col-span-1 grid-rows-2 row-span-1 gap-3 p-2rounded-3xl md:order-4">
         <div class="flex items-center justify-center text-white bg-white border border-gray-100 shadow-xl rounded-3xl ">
-          <ReusableIcons :width="'80px'" :height="'80px'" :icon="'twitter'" :color="'gray'" />
+          <ReusableIcons :width="'80px'" :height="'80px'" :icon="'twitter'" :color="'gray'" @click="goTo('https://twitter.com/jordiop26')" />
         </div>
         <div class="flex items-center justify-center text-white bg-white border border-gray-100 shadow-xl rounded-3xl ">
-          <ReusableIcons :width="'80px'" :height="'80px'" :icon="'linkedin'" :color="'gray'" />
+          <ReusableIcons :width="'80px'" :height="'80px'" :icon="'linkedin'" :color="'gray'" @click="goTo('https://linkedin.com/in/jordiop')" />
         </div>
         <div class="flex items-center justify-center text-white bg-white border border-gray-100 shadow-xl rounded-3xl ">
-          <ReusableIcons :width="'80px'" :height="'80px'" :icon="'instagram'" :color="'gray'" />
+          <ReusableIcons :width="'80px'" :height="'80px'" :icon="'instagram'" :color="'gray'" @click="goTo('https://instagram.com/jordiioop')" />
         </div>
         <div class="flex items-center justify-center text-white bg-white border border-gray-100 shadow-xl rounded-3xl ">
           <ReusableIcons :width="'80px'" :height="'80px'" :icon="'discord'" :color="'gray'" />
@@ -300,7 +300,11 @@ export default {
   updated() {
     feather.replace();
   },
-  methods: {},
+  methods: {
+    goTo(url) {
+      window.open(url, "_blank");
+    },
+  },
 };
 </script>
 
