@@ -1,6 +1,6 @@
 <template>
   <ReusablePatter>
-    <div class="grid w-full grid-cols-2 gap-3 p-10 md:h-full md:grid-cols-6 md:grid-rows-3">
+    <div class="grid w-full grid-flow-row grid-cols-2 gap-3 p-10 md:h-full md:grid-cols-6 md:grid-rows-3">
       <!--Years-->
       <ReusableCard
         class="relative flex items-center justify-center order-2 col-span-1 col-start-2 row-span-1 text-gray-600 bg-gray-200 shadow-xl rounded-3xl md:order-1 "
@@ -25,19 +25,15 @@
       </div>
       <!--EDAD-->
       <ReusableCard
-        class="relative flex items-center justify-center order-2 col-span-1 col-end-6 row-span-1 text-gray-600 bg-gray-200 shadow-xl rounded-3xl md:order-5"
+        class="relative flex items-center justify-center order-2 col-span-1 col-end-6 row-span-1 text-gray-600 bg-white shadow-xl rounded-3xl md:order-5"
         title="Age" subtitle="years old" content="23" />
       <div class="grid grid-cols-2 col-span-4 col-start-2 grid-rows-1 row-start-2 gap-3 md:grid-cols-4">
-        <div class="order-6 col-span-2 col-start-2 overflow-hidden bg-gray-200 shadow-md md:col-span-2 md:aspect-auto md:row-span-1 rounded-3xl md:order-7">
-          <Me />
-        </div>
-        <!--TECH STACK-->
         <div
-          class="flex items-center justify-center order-7 col-span-2 row-span-1 text-gray-600 duration-300 transform bg-gray-200 shadow-xl md:relative md:col-span-2 rounded-3xl">
-          <div class="w-full h-full shadow-md rounded-3xl card-hover bg-gray-50 shadow-indigo-900/5"
+          class="flex items-center justify-center order-7 col-span-1 row-span-1 text-gray-600 duration-300 transform bg-white shadow-xl md:col-span-1 rounded-3xl">
+          <div class="w-full h-full bg-white shadow-md rounded-3xl card-hover shadow-indigo-900/5"
             style="--x-rotation: 0.8476068806854309deg; --y-rotation: -6.7344108200621555deg;">
-            <div class="w-full h-full p-6 rounded-md">
-              <div class="flex items-center gap-2 leading-tight card-header"><svg class="w-5 text-gray-600"
+            <div class="w-full h-full p-6 bg-white rounded-3xl">
+              <div class="flex items-center gap-1 leading-tight card-header"><svg class="w-5 text-gray-600"
                   xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
                   <path
                     d="M12.0002 4.99693V2.99609M16 5V3M8.00018 5V2.99609M12 21V19M16 21V19M8 21V19M19 16H21M19 8H21M19 12H21M3 12H5M3 16H5M3 8H5M15.0013 12.0003C15.0013 13.6578 13.6576 15.0015 12 15.0015C10.3425 15.0015 8.99878 13.6578 8.99878 12.0003C8.99878 10.3427 10.3425 8.99902 12 8.99902C13.6576 8.99902 15.0013 10.3427 15.0013 12.0003ZM6 19H18C18.5523 19 19 18.5523 19 18V6C19 5.44772 18.5523 5 18 5H6C5.44772 5 5 5.44772 5 6V18C5 18.5523 5.44772 19 6 19Z"
@@ -91,9 +87,6 @@
                       </svg>Logitech MX Master 3</p>
                     
                   </div>
-                  <div class="flex flex-col items-start h-full gap-2 pl-1 text-xs font-normal text-gray-500 md:pl-3">
-  
-                  </div>
                 </div>
                 <div class="flex flex-col gap-3 text-sm">Software<div
                     class="flex flex-col items-start gap-3 sm:flex-row md:gap-2">
@@ -143,9 +136,7 @@
                             </g>
                           </g>
                         </svg>Sublime</p>
-                    </div>
-                    <div class="flex flex-col gap-3 px-1 text-xs font-normal text-gray-500">
-                      <p class="flex items-center gap-2 leading-tight"><svg xmlns="http://www.w3.org/2000/svg" x="0px"
+                        <p class="flex items-center gap-2 leading-tight"><svg xmlns="http://www.w3.org/2000/svg" x="0px"
                           y="0px" width="1.3em" height="1.3em" viewBox="0,0,256,256">
                           <g fill="#787878" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                             stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
@@ -172,25 +163,18 @@
                           </g>
                         </svg>Obsidian</p>
                       <!--brave browser-->
-                      <p class="flex items-center gap-2 leading-tight"><svg xmlns="http://www.w3.org/2000/svg" x="0px"
-                          y="0px" width="1.5em" height="1.5em" viewBox="0,0,256,256">
-                          <g fill="#787878" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                            style="mix-blend-mode: normal">
-                            <g transform="scale(5.12,5.12)">
-                              <path
-                                d="M18,1c-0.2652,0.00005 -0.51952,0.10543 -0.70703,0.29297l-4.49023,4.49023l-0.77539,-0.38867c-0.00065,0 -0.0013,0 -0.00195,0c-1.92158,-0.96081 -4.25079,-0.5832 -5.76953,0.93555c-0.03451,0.03409 -0.0665,0.07064 -0.0957,0.10938l-2.96094,3.96094c-0.25393,0.33928 -0.26645,0.80177 -0.03125,1.1543l1.67773,2.51758l-1.74023,3.48047c-0.11774,0.23613 -0.13739,0.50921 -0.05469,0.75977l5.76563,17.47461c0.0019,0.00588 0.00385,0.01174 0.00586,0.01758c0.87551,2.50113 2.62389,4.60161 4.92383,5.91602l10.75781,6.14844c0.30742,0.17562 0.68477,0.17562 0.99219,0l10.75781,-6.14844c2.30112,-1.31445 4.04841,-3.41513 4.92383,-5.91602c0.00201,-0.00584 0.00396,-0.0117 0.00586,-0.01758l5.76563,-17.47461c0.08271,-0.25055 0.06305,-0.52364 -0.05469,-0.75977l-1.74023,-3.48047l1.67773,-2.51758c0.2352,-0.35253 0.22268,-0.81501 -0.03125,-1.1543l-2.96094,-3.96094c-0.02865,-0.03799 -0.05998,-0.07389 -0.09375,-0.10742c-1.51875,-1.51875 -3.84986,-1.89636 -5.77148,-0.93555v-0.00195l-0.77734,0.38867l-4.49023,-4.49023c-0.18751,-0.18754 -0.44183,-0.29292 -0.70703,-0.29297zM18.41406,3h13.17188l4.70703,4.70703c0.30433,0.30438 0.76927,0.37991 1.1543,0.1875l1.42188,-0.70898c0,-0.00065 0,-0.0013 0,-0.00195c1.15069,-0.57535 2.52601,-0.34931 3.44141,0.55078l2.46484,3.29883l-1.60742,2.41211c-0.19909,0.29858 -0.22294,0.68095 -0.0625,1.00195l1.81641,3.63086l-5.63281,17.07031c-0.71706,2.04527 -2.14575,3.76112 -4.02734,4.83594l-10.26172,5.86328l-10.26172,-5.86328c-1.88078,-1.07486 -3.31037,-2.79091 -4.02734,-4.83594c-0.00049,-0.0014 -0.00145,-0.00251 -0.00195,-0.00391l-5.63086,-17.06641l1.81641,-3.63086c0.16044,-0.32101 0.13659,-0.70337 -0.0625,-1.00195l-1.60742,-2.41211l2.4668,-3.30078c0.9154,-0.90007 2.28877,-1.12417 3.43945,-0.54883l1.42188,0.71094c0.38503,0.19241 0.84997,0.11688 1.1543,-0.1875zM25,7.97266c-1.22029,0 -2.44141,0.32606 -3.52539,0.97656c-1.06687,0.64012 -2.33385,0.85873 -3.55469,0.61523l0.00195,0.00195l-2.72461,-0.54687c-0.41492,-0.08321 -0.83729,0.10373 -1.05469,0.4668l-3.72461,6.21289l0.04492,-0.06836c-1.01111,1.41555 -0.98822,3.33514 0.05469,4.72656l4.25781,5.67773l-0.17578,0.26367c-1.08996,1.63558 -1.03195,3.7918 0.14844,5.36523c0.08409,0.1113 0.19054,0.20377 0.3125,0.27148c0.57699,0.66887 1.26075,1.20258 1.98242,1.5625l7.30664,6.26172c0.37437,0.32049 0.92641,0.32049 1.30078,0l7.30469,-6.26172c0.71881,-0.359 1.40075,-0.89106 1.97656,-1.55664c0.12555,-0.06908 0.23478,-0.16433 0.32031,-0.2793c1.17892,-1.57317 1.2386,-3.72741 0.14844,-5.36328l-0.17578,-0.26562l4.25781,-5.67578c1.04446,-1.39172 1.06555,-3.31135 0.05469,-4.72656l0.04297,0.06836l-3.72266,-6.21289c-0.21713,-0.36229 -0.63846,-0.54911 -1.05273,-0.4668l-2.72656,0.54492c-1.22006,0.24418 -2.48553,0.02509 -3.55273,-0.61523c-0.07916,-0.04804 -0.16462,-0.08485 -0.25391,-0.10937c-1.02158,-0.55755 -2.14174,-0.86719 -3.27148,-0.86719zM25,9.9707c0.86321,0 1.72707,0.23186 2.49609,0.69336c0.10459,0.06268 0.21977,0.10571 0.33984,0.12695c1.42264,0.75495 3.0475,1.05204 4.63477,0.73438l2.0332,-0.40625l3.36133,5.60742c0.01404,0.02339 0.02902,0.0462 0.04492,0.06836c0.50914,0.71279 0.49819,1.66105 -0.02734,2.36133l-4.68359,6.24414c-0.25393,0.33928 -0.26645,0.80177 -0.03125,1.1543l0.56836,0.85352c0.62384,0.93612 0.59109,2.15386 -0.08398,3.05469c-0.66192,0.88306 -2.16101,1.53711 -2.65234,1.53711c0.1005,0 -0.13426,-0.03265 -0.46094,-0.22266c-0.32668,-0.19001 -0.76326,-0.49434 -1.26367,-0.86719c-0.88821,-0.66179 -2.02493,-1.54568 -3.27539,-2.41797v-0.92578l4.51563,-2.70898c0.377,-0.227 0.56308,-0.67261 0.45508,-1.09961l-1.44336,-5.77148c0.175,-0.276 0.44098,-0.51642 0.83398,-0.73242l4.63867,-2.25391l-2,-1h-2l-0.01367,0.01367c-0.1,0.002 -0.20273,0.00411 -0.30273,0.03711l-3,1c-0.495,0.166 -0.77934,0.68541 -0.65234,1.19141l1.82031,7.28125l-3.85156,2.31055l-3.84961,-2.31055l1.82031,-7.28125c0.126,-0.507 -0.1583,-1.02445 -0.6543,-1.18945l-3,-1c-0.101,-0.034 -0.20173,-0.03611 -0.30273,-0.03711l-0.01367,-0.01562h-2l-2,1l4.63867,2.25391c0.393,0.215 0.65898,0.45547 0.83398,0.73047l-1.44336,5.77344c-0.106,0.427 0.07903,0.87361 0.45703,1.09961l4.51367,2.70898v0.92188c-1.32366,0.91182 -2.47891,1.80791 -3.34961,2.46094c-0.48933,0.367 -0.90744,0.66329 -1.2168,0.84375c-0.30936,0.18041 -0.51693,0.20703 -0.43359,0.20703c-0.49133,0 -1.99049,-0.65294 -2.65234,-1.53516c-0.67561,-0.90057 -0.70803,-2.12022 -0.08398,-3.05664l0.56836,-0.85352c0.2352,-0.35253 0.22268,-0.81501 -0.03125,-1.1543l-4.68359,-6.24219v-0.00195c-0.52394,-0.70042 -0.53587,-1.6494 -0.02734,-2.36133c0.01524,-0.0222 0.02957,-0.045 0.04297,-0.06836l3.36133,-5.60742l2.03516,0.4082c1.70716,0.3405 3.48148,0.03259 4.97461,-0.86328c0.76901,-0.46145 1.63289,-0.69336 2.49609,-0.69336zM24.99805,30.24023c1.11822,0.79026 2.19575,1.61308 3.08203,2.27344c0.52346,0.39002 0.99996,0.7286 1.45313,0.99219c0.07128,0.04146 0.14271,0.07032 0.21289,0.10938l-4.74609,4.06836l-4.74609,-4.06836c0.06164,-0.03432 0.12547,-0.05952 0.1875,-0.0957c0.44064,-0.25704 0.89754,-0.58575 1.4082,-0.96875c0.86792,-0.65094 1.96854,-1.48695 3.14844,-2.31055z">
-                              </path>
-                            </g>
-                          </g>
-                        </svg>Brave Browser</p>
+                      <p class="flex items-center gap-2 leading-tight"><svg fill="#787878" width="1.3em" height="1.3em" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M11.807 9.776c0.011 0 0.005 0 0 0zM8.109 7.927c0.011 0 0.005 0 0 0zM30.229 10.781c-0.667-1.604-2.021-3.333-3.079-3.885 0.865 1.692 1.365 3.396 1.552 4.661l0.005 0.027c-1.739-4.329-4.681-6.073-7.088-9.871-0.12-0.192-0.24-0.385-0.36-0.588-0.063-0.104-0.115-0.208-0.172-0.319-0.099-0.192-0.171-0.395-0.224-0.609 0-0.020-0.015-0.036-0.036-0.041-0.011 0-0.021 0-0.031 0l-0.005 0.005c-0.005 0-0.011 0.005-0.011 0.005s0-0.005 0.005-0.011c-3.417 2-4.828 5.505-5.193 7.729-1.057 0.063-2.088 0.328-3.041 0.776-0.183 0.093-0.265 0.303-0.197 0.489 0.077 0.213 0.317 0.319 0.525 0.224 0.833-0.391 1.729-0.625 2.651-0.687l0.089-0.011c0.125-0.005 0.255-0.011 0.38-0.011 0.745-0.005 1.489 0.099 2.203 0.307l0.125 0.037c0.12 0.036 0.235 0.077 0.355 0.12 0.083 0.031 0.172 0.063 0.255 0.099 0.068 0.025 0.136 0.057 0.203 0.083 0.105 0.048 0.209 0.1 0.313 0.152l0.14 0.067c0.104 0.053 0.204 0.109 0.303 0.167 0.063 0.037 0.125 0.073 0.187 0.115 1.111 0.688 2.037 1.641 2.683 2.776-0.817-0.572-2.287-1.145-3.697-0.895 5.52 2.76 4.036 12.265-3.615 11.905-0.683-0.025-1.355-0.156-1.995-0.385-0.156-0.057-0.308-0.12-0.453-0.183-0.088-0.041-0.177-0.083-0.26-0.124-1.876-0.969-3.423-2.803-3.615-5.027 0 0 0.708-2.64 5.072-2.64 0.475 0 1.824-1.319 1.849-1.699-0.011-0.125-2.683-1.187-3.724-2.213-0.557-0.547-0.817-0.812-1.052-1.011-0.125-0.109-0.26-0.208-0.401-0.301-0.348-1.224-0.364-2.521-0.041-3.751-1.579 0.719-2.803 1.855-3.693 2.855h-0.009c-0.609-0.771-0.563-3.313-0.532-3.844-0.005-0.036-0.453 0.229-0.511 0.271-0.536 0.385-1.041 0.813-1.5 1.287-0.525 0.531-1.004 1.104-1.437 1.719-0.984 1.396-1.687 2.979-2.057 4.645-0.005 0.021-0.145 0.647-0.249 1.417-0.021 0.12-0.037 0.24-0.052 0.359-0.043 0.292-0.073 0.589-0.089 0.881l-0.005 0.047c-0.009 0.172-0.020 0.339-0.031 0.511v0.077c0 8.48 6.875 15.355 15.355 15.355 7.593 0 13.9-5.516 15.135-12.756 0.027-0.197 0.047-0.395 0.068-0.593 0.307-2.631-0.031-5.401-0.995-7.713z"></path> </g></svg>Firefox</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="order-6 col-span-2 col-start-2 overflow-hidden bg-gray-200 shadow-md md:col-span-2 md:aspect-auto md:row-span-1 rounded-3xl md:order-7">
+          <Me />
+        </div>
+        <div class="order-10 col-span-1 row-span-2 overflow-hidden bg-white shadow-xl md:col-span-1 md:row-span-1 rounded-3xl">
         </div>
       </div>
       <!--SKILLS-->
@@ -247,21 +231,8 @@
         class="flex items-center justify-center order-8 col-span-1 row-span-1 text-white bg-gray-200 shadow-xl md:order-8 rounded-3xl ">
         <Github />
       </div>
-      <div
-        class="flex items-center justify-center order-8 col-span-1 row-span-1 text-white bg-white shadow-xl md:order-8 rounded-3xl ">
+      <div class="order-10 col-span-1 row-span-2 overflow-hidden bg-white shadow-xl md:col-span-1 md:row-span-1 rounded-3xl">
       </div>
-      <!-- <div
-        class="flex items-center justify-center order-9 col-span-1 row-span-1 text-white bg-gray-200 shadow-xl md:order-9 rounded-3xl ">
-      </div>
-      <div
-        class="flex items-center justify-center order-10 col-span-2 row-span-1 text-white bg-gray-200 shadow-xl md:order-10 rounded-3xl ">
-      </div>
-      <div
-        class="flex items-center justify-center order-11 col-span-2 row-span-1 text-white bg-gray-200 shadow-xl md:order-11 rounded-3xl ">
-      </div>
-      <div
-        class="flex items-center justify-center order-12 col-span-1 row-span-2 text-white bg-gray-200 shadow-xl md:order-12 rounded-3xl ">
-      </div> -->
     </div>
   </ReusablePatter>
 
