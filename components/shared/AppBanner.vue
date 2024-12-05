@@ -1,15 +1,18 @@
 <template>
   <ReusablePatter>
-    <div class="grid w-full grid-flow-row grid-cols-2 gap-3 p-10 md:h-full md:grid-cols-6 md:grid-rows-3">
+    <div class="grid w-full h-full grid-cols-2 gap-3 p-10 md:grid-flow-row md:h-full md:grid-cols-6 md:grid-rows-3">
       <!--Years-->
       <ReusableCard
-        class="relative flex items-center justify-center order-2 col-span-1 col-start-2 row-span-1 text-gray-600 bg-gray-200 shadow-xl rounded-3xl md:order-1 "
+        class="flex items-center justify-center w-full col-span-1 text-gray-600 bg-gray-200 shadow-xl md:relative md:col-span-1 md:col-start-2 rounded-3xl md:order-1 "
         title="Years" subtitle="experience" content="2" />
+      <ReusableCard
+        class="flex items-center justify-center w-full col-span-1 text-gray-600 bg-white shadow-xl md:col-end-6 md:relative rounded-3xl md:order-5"
+        title="Age" subtitle="years old" content="23" />
       <!--WEATHER-->
       <WeatherWidget
-        class="flex items-center justify-center order-9 col-span-2 row-span-1 text-white shadow-xl md:col-span-1 rounded-3xl md:order-3" />
+        class="flex items-center justify-center h-full col-span-2 row-span-1 row-start-2 text-white shadow-xl md:row-span-1 md:col-span-1 rounded-3xl md:order-3" />
       <!--EMPTY 2-->
-      <div class="grid order-10 w-full grid-cols-2 col-span-1 grid-rows-2 row-span-1 gap-3 p-2rounded-3xl md:order-4">
+      <div class="grid w-full grid-cols-2 col-span-2 grid-rows-2 row-span-1 row-start-3 gap-3 p-2 md:col-span-1 rounded-3xl md:order-4">
         <div class="flex items-center justify-center text-white bg-white border border-gray-100 shadow-xl rounded-3xl ">
           <ReusableIcons :width="'80px'" :height="'80px'" :icon="'twitter'" :color="'gray'" @click="goTo('https://twitter.com/jordiop26')" />
         </div>
@@ -24,16 +27,14 @@
         </div>
       </div>
       <!--EDAD-->
-      <ReusableCard
-        class="relative flex items-center justify-center order-2 col-span-1 col-end-6 row-span-1 text-gray-600 bg-white shadow-xl rounded-3xl md:order-5"
-        title="Age" subtitle="years old" content="23" />
-      <div class="grid grid-cols-2 col-span-4 col-start-2 grid-rows-1 row-start-2 gap-3 md:grid-cols-4">
+      
+      <div class="flex-col order-1 gap-3 fle x md:grid-rows-1 md:row-start-2 md:grid md:col-span-4 md:col-start-2 md:grid-cols-4">
         <div
-          class="flex items-center justify-center order-7 col-span-1 row-span-1 text-gray-600 duration-300 transform bg-white shadow-xl md:col-span-1 rounded-3xl">
-          <div class="w-full h-full bg-white shadow-md rounded-3xl card-hover shadow-indigo-900/5"
+          class="flex items-center justify-center text-gray-600 duration-300 transform bg-white shadow-xl md:row-span-1 md:col-span-1 md:order-7 rounded-3xl">
+          <div class="w-full h-full bg-white shadow-md rounded-3xl md:card-hover shadow-indigo-900/5"
             style="--x-rotation: 0.8476068806854309deg; --y-rotation: -6.7344108200621555deg;">
             <div class="w-full h-full p-6 bg-white rounded-3xl">
-              <div class="flex items-center gap-1 leading-tight card-header"><svg class="w-5 text-gray-600"
+              <div class="flex items-center gap-1 leading-tight md:card-header"><svg class="w-5 text-gray-600"
                   xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
                   <path
                     d="M12.0002 4.99693V2.99609M16 5V3M8.00018 5V2.99609M12 21V19M16 21V19M8 21V19M19 16H21M19 8H21M19 12H21M3 12H5M3 16H5M3 8H5M15.0013 12.0003C15.0013 13.6578 13.6576 15.0015 12 15.0015C10.3425 15.0015 8.99878 13.6578 8.99878 12.0003C8.99878 10.3427 10.3425 8.99902 12 8.99902C13.6576 8.99902 15.0013 10.3427 15.0013 12.0003ZM6 19H18C18.5523 19 19 18.5523 19 18V6C19 5.44772 18.5523 5 18 5H6C5.44772 5 5 5.44772 5 6V18C5 18.5523 5.44772 19 6 19Z"
@@ -171,22 +172,22 @@
             </div>
           </div>
         </div>
-        <div class="order-6 col-span-2 col-start-2 overflow-hidden bg-gray-200 shadow-md md:col-span-2 md:aspect-auto md:row-span-1 rounded-3xl md:order-7">
+        <div class="order-1 col-span-2 overflow-hidden bg-gray-200 shadow-md md:col-start-2 md:col-span-2 md:aspect-auto md:row-span-1 rounded-3xl md:order-7">
           <Me />
         </div>
-        <div class="order-10 col-span-1 row-span-2 overflow-hidden bg-white shadow-xl md:col-span-1 md:row-span-1 rounded-3xl">
+        <div class="col-span-1 row-span-2 overflow-hidden bg-white shadow-xl md:col-span-1 md:row-span-1 rounded-3xl">
         </div>
       </div>
       <!--SKILLS-->
       <div
-        class="relative flex flex-col items-center justify-between order-5 h-full col-span-2 col-start-2 row-span-1 gap-2 text-white border shadow-md md:order-7 rounded-3xl">
-        <div class="flex flex-row w-full row-span-1 gap-3 h-1/2">
-          <div class="w-2/3 h-full bg-white border border-gray-100 rounded-3xl">
+        class="flex flex-col items-center justify-between h-full col-span-2 col-start-2 row-span-1 gap-2 text-white border shadow-md md:relative md:order-7 rounded-3xl">
+        <div class="w-full row-span-1 gap-3 md:flex md:flex-row md:h-1/2">
+          <div class="w-full h-full bg-white border border-gray-100 md:w-2/3 rounded-3xl">
             <SpotifyCard />
           </div>
-          <div class="w-1/3 h-full bg-white border border-gray-100 rounded-3xl">
+          <div class="w-full h-full bg-white border border-gray-100 md:w-1/3 rounded-3xl">
             <div
-              class="flex items-center justify-between order-3 w-full h-full col-span-1 row-span-1 text-white bg-gray-200 shadow-xl md:order-9 rounded-3xl ">
+              class="flex items-center justify-between w-full h-full col-span-1 row-span-1 text-white bg-gray-200 shadow-xl md:order-9 rounded-3xl ">
               <div class="flex flex-col justify-center w-full h-full p-1 bg-white rounded-3xl">
                 <div>
                   <p class="flex flex-row items-center justify-start gap-2 p-1 mt-2 ml-3 leading-tight text-gray-500">
@@ -216,7 +217,7 @@
           </div>
         </div>
         <div
-          class="relative flex flex-col justify-between w-full row-span-1 border-gray-100 h-1/2 bg-gray-50 rounded-3xl">
+          class="flex flex-col justify-between w-full row-span-1 border-gray-100 md:relative h-1/2 bg-gray-50 rounded-3xl">
           <p class="flex flex-row items-center justify-start gap-2 p-1 mt-2 ml-3 leading-tight text-gray-500">
             <img src="https://img.icons8.com/?size=100&id=58861&format=png&color=000000" class="w-4 h-4" />
             <span>Skills</span>
@@ -228,10 +229,10 @@
       <!--IMATGE-->
       <!--GITHUB-->
       <div
-        class="flex items-center justify-center order-8 col-span-1 row-span-1 text-white bg-gray-200 shadow-xl md:order-8 rounded-3xl ">
+        class="flex items-center justify-center col-span-1 row-span-1 text-white bg-gray-200 shadow-xl md:order-8 rounded-3xl ">
         <Github />
       </div>
-      <div class="order-10 col-span-1 row-span-2 overflow-hidden bg-white shadow-xl md:col-span-1 md:row-span-1 rounded-3xl">
+      <div class="col-span-1 row-span-2 overflow-hidden bg-white shadow-xl md:col-span-1 md:row-span-1 rounded-3xl">
       </div>
     </div>
   </ReusablePatter>

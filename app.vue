@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-1 md:grid-cols-7" :class="appTheme" >
     <NuxtRouteAnnouncer />
-    <NuxtPage class="h-full min-h-screen col-span-7 overflow-y-scroll"/> 
+    <NuxtPage class="h-full min-h-screen col-span-1 overflow-y-scroll md:col-span-7"/> 
   </div>
 </template>
 <script> 
