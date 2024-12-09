@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="w-full h-full cardContainer" v-if="weather">
-      <div class="card">
+    <div class="w-full h-full md:cardContainer" v-if="weather">
+      <div class="md:card">
         <p class="capitalize city">{{ weather.location.name || '' }}</p>
         <p class="weather">{{ weather.current.condition.text || '' }}</p>
         <img
@@ -67,6 +67,27 @@ export default {
     border: 1px solid rgba(255, 255, 255, 0.089);
     backdrop-filter: blur(30px);
     border-radius: 15px
+  }
+
+  .cardContainerLow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(251, 251, 251);
+    border: 1px solid rgba(255, 255, 255, 0.089);
+    backdrop-filter: blur(30px);
+    border-radius: 15px
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    border-radius: 10px;
+    cursor: pointer;
   }
 
   .card {

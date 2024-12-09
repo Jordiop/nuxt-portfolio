@@ -1,6 +1,6 @@
 <template>
   <ReusablePatter>
-    <div class="grid w-full h-full grid-cols-2 gap-3 p-10 md:grid-flow-row md:h-full md:grid-cols-6 md:grid-rows-3">
+    <div class="grid w-full h-full grid-cols-2 gap-3 p-6 md:grid-flow-row md:h-full md:grid-cols-6 md:grid-rows-3">
       <!--Years-->
       <ReusableCard
         class="flex items-center justify-center w-full col-span-1 text-gray-600 bg-gray-200 shadow-xl md:relative md:col-span-1 md:col-start-2 rounded-3xl md:order-1 "
@@ -10,9 +10,9 @@
         title="Age" subtitle="years old" content="23" />
       <!--WEATHER-->
       <WeatherWidget
-        class="flex items-center justify-center h-full col-span-2 row-span-1 row-start-2 text-white shadow-xl md:row-span-1 md:col-span-1 rounded-3xl md:order-3" />
+        class="flex items-center justify-center h-full col-span-2 text-white shadow-xl md:row-span-1 md:row-start-2 md:col-span-1 rounded-3xl md:order-3" />
       <!--EMPTY 2-->
-      <div class="grid w-full grid-cols-2 col-span-2 grid-rows-2 row-span-1 row-start-3 gap-3 p-2 md:col-span-1 rounded-3xl md:order-4">
+      <div class="flex w-full col-span-2 row-span-2 gap-3 p-2 md:grid md:grid-rows-2 md:row-start-3 md:row-span-1 md:grid-cols-2 md:col-span-1 rounded-3xl md:order-4">
         <div class="flex items-center justify-center text-white bg-white border border-gray-100 shadow-xl rounded-3xl ">
           <ReusableIcons :width="'80px'" :height="'80px'" :icon="'twitter'" :color="'gray'" @click="goTo('https://twitter.com/jordiop26')" />
         </div>
@@ -217,8 +217,8 @@
           </div>
         </div>
         <div
-          class="flex flex-col justify-between w-full row-span-1 border-gray-100 md:relative h-1/2 bg-gray-50 rounded-3xl">
-          <p class="flex flex-row items-center justify-start gap-2 p-1 mt-2 ml-3 leading-tight text-gray-500">
+          class="flex flex-col justify-between w-full row-span-1 mb-16 border-gray-100 md:relative h-1/2 bg-gray-50 rounded-3xl">
+          <p class="flex flex-row items-center justify-start gap-2 p-1 mt-2 leading-tight text-gray-500">
             <img src="https://img.icons8.com/?size=100&id=58861&format=png&color=000000" class="w-4 h-4" />
             <span>Skills</span>
           </p>
