@@ -28,7 +28,7 @@
       </div>
       <!--EDAD-->
       
-      <div class="flex flex-col order-1 gap-3 md:grid-rows-1 md:row-start-2 md:grid md:col-span-4 md:col-start-2 md:grid-cols-4">
+      <div class="flex flex-col order-1 col-span-2 gap-3 md:grid-rows-1 md:row-start-2 md:grid md:col-span-4 md:col-start-2 md:grid-cols-4">
         <div
           class="flex items-center justify-center text-gray-600 duration-300 transform bg-white shadow-xl md:row-span-1 md:col-span-1 md:order-7 rounded-3xl">
           <div class="w-full h-full bg-white shadow-md rounded-3xl md:card-hover shadow-indigo-900/5"
@@ -180,7 +180,7 @@
       </div>
       <!--SKILLS-->
       <div
-        class="flex flex-col items-center justify-between h-full col-span-2 col-start-2 row-span-1 gap-2 text-white border shadow-md md:relative md:order-7 rounded-3xl">
+        class="flex flex-col items-center justify-between h-full col-span-2 gap-2 text-white border shadow-md md:row-span-1 md:col-start-2 md:relative md:order-7 rounded-3xl">
         <div class="w-full row-span-1 gap-3 md:flex md:flex-row md:h-1/2">
           <div class="w-full h-full bg-white border border-gray-100 md:w-2/3 rounded-3xl">
             <SpotifyCard />
@@ -217,7 +217,7 @@
           </div>
         </div>
         <div
-          class="flex flex-col justify-between w-full row-span-1 mb-16 border-gray-100 md:relative h-1/2 bg-gray-50 rounded-3xl">
+          class="flex flex-col justify-between w-full row-span-1 border-gray-100 md:relative h-1/2 bg-gray-50 rounded-3xl">
           <p class="flex flex-row items-center justify-start gap-2 p-1 mt-2 leading-tight text-gray-500">
             <img src="https://img.icons8.com/?size=100&id=58861&format=png&color=000000" class="w-4 h-4" />
             <span>Skills</span>
@@ -229,10 +229,10 @@
       <!--IMATGE-->
       <!--GITHUB-->
       <div
-        class="flex items-center justify-center col-span-1 row-span-1 text-white bg-gray-200 shadow-xl md:order-8 rounded-3xl ">
+        class="flex items-center justify-center col-span-2 row-span-1 text-white bg-gray-200 shadow-xl md:col-span-1 md:order-8 rounded-3xl ">
         <Github />
       </div>
-      <div class="col-span-1 row-span-2 overflow-hidden bg-white shadow-xl md:col-span-1 md:row-span-1 rounded-3xl">
+      <div class="col-span-2 row-span-2 overflow-hidden bg-white shadow-xl md:col-span-1 md:row-span-1 rounded-3xl">
       </div>
     </div>
   </ReusablePatter>
