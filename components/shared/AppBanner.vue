@@ -3,26 +3,26 @@
     <div class="grid w-full h-full grid-cols-2 p-6 md:gap-3 md:grid-flow-row md:h-full md:grid-cols-6 md:grid-rows-3">
       <!--Years-->
       <ReusableCard
-        class="flex items-center justify-center w-full col-span-1 text-gray-600 bg-gray-200 shadow-xl md:relative md:col-span-1 md:col-start-2 rounded-3xl md:order-1 "
+        class="flex items-center justify-center w-full col-span-1 text-gray-600 bg-gray-200 shadow-xl md:relative md:col-span-1 md:col-start-2 rounded-2xl md:order-1 "
         title="Years" subtitle="experience" content="2" />
       <ReusableCard
-        class="flex items-center justify-center w-full col-span-1 text-gray-600 bg-white shadow-xl md:col-end-6 md:relative rounded-3xl md:order-5"
+        class="flex items-center justify-center w-full col-span-1 text-gray-600 bg-white shadow-xl md:col-end-6 md:relative rounded-2xl md:order-5"
         title="Age" subtitle="years old" content="23" />
       <!--WEATHER-->
       <WeatherWidget
-        class="flex items-center justify-center h-full col-span-2 text-white shadow-xl md:row-span-1 md:row-start-2 md:col-span-1 rounded-3xl md:order-3" />
+        class="flex items-center justify-center h-full col-span-2 text-white bg-white shadow-xl md:row-span-1 md:row-start-2 md:col-span-1 rounded-2xl md:order-3" />
       <!--EMPTY 2-->
-      <div class="flex w-full col-span-2 row-span-2 gap-3 md:p-2 md:grid md:grid-rows-2 md:row-start-3 md:row-span-1 md:grid-cols-2 md:col-span-1 rounded-3xl md:order-4">
-        <div class="flex items-center justify-center text-white bg-white border border-gray-100 shadow-xl rounded-3xl ">
+      <div class="flex w-full col-span-2 row-span-2 gap-3 py-4 md:py-0 md:p-2 md:grid md:grid-rows-2 md:row-start-3 md:row-span-1 md:grid-cols-2 md:col-span-1 rounded-2xl md:order-4">
+        <div class="flex items-center justify-center text-white bg-white border border-gray-100 shadow-xl rounded-2xl ">
           <ReusableIcons :width="'80px'" :height="'80px'" :icon="'twitter'" :color="'gray'" @click="goTo('https://twitter.com/jordiop26')" />
         </div>
-        <div class="flex items-center justify-center text-white bg-white border border-gray-100 shadow-xl rounded-3xl ">
+        <div class="flex items-center justify-center text-white bg-white border border-gray-100 shadow-xl rounded-2xl ">
           <ReusableIcons :width="'80px'" :height="'80px'" :icon="'linkedin'" :color="'gray'" @click="goTo('https://linkedin.com/in/jordiop')" />
         </div>
-        <div class="flex items-center justify-center text-white bg-white border border-gray-100 shadow-xl rounded-3xl ">
+        <div class="flex items-center justify-center text-white bg-white border border-gray-100 shadow-xl rounded-2xl ">
           <ReusableIcons :width="'80px'" :height="'80px'" :icon="'instagram'" :color="'gray'" @click="goTo('https://instagram.com/jordiioop')" />
         </div>
-        <div class="flex items-center justify-center text-white bg-white border border-gray-100 shadow-xl rounded-3xl ">
+        <div class="flex items-center justify-center text-white bg-white border border-gray-100 shadow-xl rounded-2xl ">
           <ReusableIcons :width="'80px'" :height="'80px'" :icon="'discord'" :color="'gray'" />
         </div>
       </div>
@@ -30,10 +30,10 @@
       
       <div class="flex flex-col order-1 col-span-2 gap-3 md:grid-rows-1 md:row-start-2 md:grid md:col-span-4 md:col-start-2 md:grid-cols-4">
         <div
-          class="flex items-center justify-center text-gray-600 duration-300 transform bg-white shadow-xl md:row-span-1 md:col-span-1 md:order-7 rounded-3xl">
-          <div class="w-full h-full bg-white shadow-md rounded-3xl md:card-hover shadow-indigo-900/5"
+          class="flex items-center justify-center text-gray-600 duration-300 transform bg-white shadow-xl md:row-span-1 md:col-span-1 md:order-7 rounded-2xl">
+          <div class="w-full h-full bg-white shadow-md rounded-2xl md:card-hover shadow-indigo-900/5"
             style="--x-rotation: 0.8476068806854309deg; --y-rotation: -6.7344108200621555deg;">
-            <div class="w-full h-full p-6 bg-white rounded-3xl">
+            <div class="w-full h-full p-6 bg-white rounded-2xl">
               <div class="flex items-center gap-1 leading-tight md:card-header"><svg class="w-5 text-gray-600"
                   xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
                   <path
@@ -172,23 +172,23 @@
             </div>
           </div>
         </div>
-        <div class="order-1 col-span-2 overflow-hidden bg-gray-200 shadow-md md:col-start-2 md:col-span-2 md:aspect-auto md:row-span-1 rounded-3xl md:order-7">
+        <div class="order-1 col-span-2 overflow-hidden bg-gray-200 shadow-md md:col-start-2 md:col-span-2 md:aspect-auto md:row-span-1 rounded-2xl md:order-7">
           <Me />
         </div>
-        <div class="col-span-1 row-span-2 overflow-hidden bg-white shadow-xl md:col-span-1 md:row-span-1 rounded-3xl">
+        <div class="col-span-1 row-span-2 overflow-hidden bg-white shadow-xl md:col-span-1 md:row-span-1 rounded-2xl">
         </div>
       </div>
       <!--SKILLS-->
       <div
-        class="flex flex-col items-center justify-between h-full col-span-2 gap-2 text-white border shadow-md md:row-span-1 md:col-start-2 md:relative md:order-7 rounded-3xl">
+        class="flex flex-col items-center justify-between h-full col-span-2 gap-2 text-white border shadow-md md:row-span-1 md:col-start-2 md:relative md:order-7 rounded-2xl">
         <div class="w-full row-span-1 gap-3 md:flex md:flex-row md:h-1/2">
-          <div class="w-full h-full bg-white border border-gray-100 md:w-2/3 rounded-3xl">
+          <div class="w-full h-full bg-white border border-gray-100 md:w-2/3 rounded-2xl">
             <SpotifyCard />
           </div>
-          <div class="w-full h-full bg-white border border-gray-100 md:w-1/3 rounded-3xl">
+          <div class="w-full h-full bg-white border border-gray-100 md:w-1/3 rounded-2xl">
             <div
-              class="flex items-center justify-between w-full h-full col-span-1 row-span-1 text-white bg-gray-200 shadow-xl md:order-9 rounded-3xl ">
-              <div class="flex flex-col justify-center w-full h-full p-1 bg-white rounded-3xl">
+              class="flex items-center justify-between w-full h-full col-span-1 row-span-1 text-white bg-gray-200 shadow-xl md:order-9 rounded-2xl ">
+              <div class="flex flex-col justify-center w-full h-full p-1 bg-white rounded-2xl">
                 <div>
                   <p class="flex flex-row items-center justify-start gap-2 p-1 mt-2 ml-3 leading-tight text-gray-500">
                     <img src="https://img.icons8.com/ios/100/language.png" class="w-4 h-4" />
@@ -217,22 +217,20 @@
           </div>
         </div>
         <div
-          class="flex flex-col justify-between w-full row-span-1 border-gray-100 md:relative h-1/2 bg-gray-50 rounded-3xl">
+          class="flex flex-col justify-between w-full h-full border-gray-100 pb-30 md:row-span-1 md:relative md:h-1/2 bg-gray-50 rounded-2xl">
           <p class="flex flex-row items-center justify-start gap-2 p-1 mt-2 leading-tight text-gray-500">
             <img src="https://img.icons8.com/?size=100&id=58861&format=png&color=000000" class="w-4 h-4" />
             <span>Skills</span>
           </p>
           <AppScroll />
         </div>
-
       </div>
-      <!--IMATGE-->
       <!--GITHUB-->
       <div
-        class="flex items-center justify-center col-span-2 row-span-1 text-white bg-gray-200 shadow-xl md:col-span-1 md:order-8 rounded-3xl ">
+        class="flex items-center justify-center col-span-2 row-span-1 mb-5 text-white bg-gray-200 shadow-xl md:mb-0 md:col-span-1 md:order-8 rounded-2xl ">
         <Github />
       </div>
-      <div class="col-span-2 row-span-2 overflow-hidden bg-white shadow-xl md:col-span-1 md:row-span-1 rounded-3xl">
+      <div class="col-span-2 row-span-2 overflow-hidden bg-white shadow-xl md:col-span-1 md:row-span-1 rounded-2xl">
       </div>
     </div>
   </ReusablePatter>
