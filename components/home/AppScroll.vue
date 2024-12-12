@@ -53,9 +53,6 @@ export default {
           name: 'NestJS',
           source: 'https://nestjs.com/logo-small-gradient.d792062c.svg'
         },
-        {
-
-        }
       ]
     }
   }

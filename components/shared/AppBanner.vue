@@ -1,6 +1,6 @@
 <template>
   <ReusablePatter>
-    <div class="grid w-full h-full grid-cols-2 gap-3 p-6 md:grid-flow-row md:h-full md:grid-cols-6 md:grid-rows-3">
+    <div class="grid w-full h-full grid-cols-2 p-6 md:gap-3 md:grid-flow-row md:h-full md:grid-cols-6 md:grid-rows-3">
       <!--Years-->
       <ReusableCard
         class="flex items-center justify-center w-full col-span-1 text-gray-600 bg-gray-200 shadow-xl md:relative md:col-span-1 md:col-start-2 rounded-3xl md:order-1 "
@@ -12,7 +12,7 @@
       <WeatherWidget
         class="flex items-center justify-center h-full col-span-2 text-white shadow-xl md:row-span-1 md:row-start-2 md:col-span-1 rounded-3xl md:order-3" />
       <!--EMPTY 2-->
-      <div class="flex w-full col-span-2 row-span-2 gap-3 p-2 md:grid md:grid-rows-2 md:row-start-3 md:row-span-1 md:grid-cols-2 md:col-span-1 rounded-3xl md:order-4">
+      <div class="flex w-full col-span-2 row-span-2 gap-3 md:p-2 md:grid md:grid-rows-2 md:row-start-3 md:row-span-1 md:grid-cols-2 md:col-span-1 rounded-3xl md:order-4">
         <div class="flex items-center justify-center text-white bg-white border border-gray-100 shadow-xl rounded-3xl ">
           <ReusableIcons :width="'80px'" :height="'80px'" :icon="'twitter'" :color="'gray'" @click="goTo('https://twitter.com/jordiop26')" />
         </div>
@@ -28,7 +28,7 @@
       </div>
       <!--EDAD-->
       
-      <div class="flex-col order-1 gap-3 fle x md:grid-rows-1 md:row-start-2 md:grid md:col-span-4 md:col-start-2 md:grid-cols-4">
+      <div class="flex flex-col order-1 gap-3 md:grid-rows-1 md:row-start-2 md:grid md:col-span-4 md:col-start-2 md:grid-cols-4">
         <div
           class="flex items-center justify-center text-gray-600 duration-300 transform bg-white shadow-xl md:row-span-1 md:col-span-1 md:order-7 rounded-3xl">
           <div class="w-full h-full bg-white shadow-md rounded-3xl md:card-hover shadow-indigo-900/5"
